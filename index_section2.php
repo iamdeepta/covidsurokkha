@@ -175,6 +175,7 @@ $output .= '</tbody>
 	
 	if (screen.width <= 460) {
 
+if(lastSegment=='en'){
 $('#dtBasicExample').DataTable({
 
   	'lengthMenu':[3,5,10,20],
@@ -186,8 +187,48 @@ $('#dtBasicExample1').DataTable({
   	'lengthMenu':[3,5,10,20]
   });
 
+}else{
+
+	$('#dtBasicExample').DataTable({
+
+  	'lengthMenu':[3,5,10,20],
+  	"aaSorting": [[3,'desc']],
+  	"language": {
+            "lengthMenu": "দেখান _MENU_ এন্ট্রি",
+            "zeroRecords": "কোনো রেকর্ড পাওয়া যায়নি",
+            "info": "Showing page _PAGE_ of _PAGES_",
+            "infoEmpty": "কোনো রেকর্ড পাওয়া যায়নি",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+            "sSearch": "অনুসন্ধান করুন:",
+            'paginate': {
+		      'previous': 'আগে',
+		      'next': 'পরে'
+    		}
+        }
+  });
+
+$('#dtBasicExample1').DataTable({
+
+  	'lengthMenu':[3,5,10,20],
+  	"language": {
+            "lengthMenu": "দেখান _MENU_ এন্ট্রি",
+            "zeroRecords": "কোনো রেকর্ড পাওয়া যায়নি",
+            "info": "Showing page _PAGE_ of _PAGES_",
+            "infoEmpty": "কোনো রেকর্ড পাওয়া যায়নি",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+            "sSearch": "অনুসন্ধান করুন:",
+            'paginate': {
+		      'previous': 'আগে',
+		      'next': 'পরে'
+    		}
+        }
+  });
+}
+
 
 }else{
+
+	if(lastSegment=='en'){
 
 $('#dtBasicExample1').DataTable();
 
@@ -196,6 +237,46 @@ $('#dtBasicExample1').DataTable();
 $('#dtBasicExample').DataTable( {
     "aaSorting": [[3,'desc']]
   } );
+
+}else{
+
+$('#dtBasicExample1').DataTable({
+
+	"language": {
+            "lengthMenu": "দেখান _MENU_ এন্ট্রি",
+            "zeroRecords": "কোনো রেকর্ড পাওয়া যায়নি",
+            "info": "Showing page _PAGE_ of _PAGES_",
+            "infoEmpty": "কোনো রেকর্ড পাওয়া যায়নি",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+            "sSearch": "অনুসন্ধান করুন:",
+            'paginate': {
+		      'previous': 'আগে',
+		      'next': 'পরে'
+    		}
+        }
+});
+
+
+
+$('#dtBasicExample').DataTable( {
+    "aaSorting": [[3,'desc']],
+    "language": {
+            "lengthMenu": "দেখান _MENU_ এন্ট্রি",
+            "zeroRecords": "কোনো রেকর্ড পাওয়া যায়নি",
+            "info": "Showing page _PAGE_ of _PAGES_",
+            "infoEmpty": "কোনো রেকর্ড পাওয়া যায়নি",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+            "sSearch": "অনুসন্ধান করুন:",
+            'paginate': {
+		      'previous': 'আগে',
+		      'next': 'পরে'
+    		}
+        }
+
+      
+  } );
+
+}
 
 }
 

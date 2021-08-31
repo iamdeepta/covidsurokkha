@@ -169,7 +169,7 @@ $output .= '</tbody>
 ?>
 
 
-<script type="text/javascript" src="admin/js/addons/datatables.min.js"></script>
+<script type="text/javascript" src="admin/js/addons/datatables.min.js" defer></script>
 
 <script type="text/javascript">
 	

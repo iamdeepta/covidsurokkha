@@ -132,7 +132,7 @@
 
        .inactive_rating_modal_card{
 
-       		opacity: 1;
+       		opacity: 0;
        		transform: translateY(550px);
        		transition: 1s;
        }
@@ -161,7 +161,7 @@
 
        .inactive_rating_modal_card_next{
 
-       		opacity: 1;
+       		opacity: 0;
        		transform: translateY(550px);
        		transition: 1s;
        }

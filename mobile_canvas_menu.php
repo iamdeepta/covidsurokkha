@@ -15,7 +15,7 @@
 		}
 	}
 </style>
-<div id="blur_bg" style="width: 100vw;height: 732vh;background-color: rgb(0.5,0.5,0.5,0.5);position: absolute;z-index: 999;display: none;"></div>
+<div id="blur_bg" style="width: 100vw;height: 1090vh;background-color: rgb(0.5,0.5,0.5,0.5);position: absolute;z-index: 999;display: none;"></div>
 <div class="mobile_canvus_menu">
 <div class="close_btn">
 <img src="assets/images/icon/close-dark.png" alt="covidsurokkha">

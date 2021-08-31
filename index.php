@@ -546,30 +546,21 @@ Track</a>
 
 	.loading_animation{
 
-		animation: rotate 3s linear 1s infinite;
+		animation: rotatethreesixty 1s linear infinite;
 		overflow: hidden;
 	}
 
-	/*@keyframes rotatethreesixty{
+	@keyframes rotatethreesixty{
 
-		0%{
+		
+		100%{
 
-			transform: rotate(0deg);
-		}
-
-		25%{
-
-			transform: rotate(90deg);
-		}
-
-		50%{
-
-			transform: rotate(180deg);
+			transform: rotate(360deg);
 		}
 
 
 
-	}*/
+	}
 
 	@media screen and (max-width: 460px){
 
@@ -718,10 +709,11 @@ Track</a>
 		$('.division_card').addClass('active_division_card');
 
 		//hospital_section();
+    hospital_section();
+    rating_review();
 
 		$(window).one('scroll',function(){
 
-			hospital_section();
 
 			check_now_section();
 
@@ -736,7 +728,6 @@ Track</a>
 
 			fbChatPlugin();
 
-			rating_review();
 
 			//animate_on_scroll();
 

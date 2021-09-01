@@ -95,7 +95,7 @@ require('admin/db.inc.php');
     outline: 0 none !important;
    box-shadow: 0 1px 1px transparent inset, 0 0 8px transparent !important;
    /*border: 1px solid transparent !important;*/
-   border-bottom: 2px solid #01cfbe !important;
+   border: 2px solid #01cfbe !important;
    transition: 0.5s !important;
   }
 
@@ -127,6 +127,11 @@ require('admin/db.inc.php');
 
       left: 93% !important;
     }
+
+    #blogs_searchbar::placeholder{
+
+    float: none !important;
+  }
 
   }
 </style>
@@ -181,12 +186,12 @@ require('admin/db.inc.php');
   <h2 style="font-size: 30px;margin-top: 30px" class="notranslate">সরকারি টেস্ট প্রতিষ্ঠান</h2>
 
 <?php }?> -->
-<i class="fas fa-search" id="blogs_searchbar_icon" style="position: absolute;top: 80px;left: 98%" data-aos="fade-down" data-aos-duration="1000"></i>
+<i class="fas fa-search" id="blogs_searchbar_icon" style="position: absolute;top: 79px;left: 98%" data-aos="fade-down" data-aos-duration="1000"></i>
 
 <?php if(@$_GET['lang']=='en'){?>
-<input type="text" name="blogs_searchbar" id="blogs_searchbar" class="form-control" placeholder="Search" style="margin-top: 20px;border: none;border-bottom: 2px solid lightgray;background-color: transparent;border-radius: 0px" data-aos="fade-down" data-aos-duration="1000" onkeyup="blogs_data_show()" onfocusin="hide_placeholder_searchbar_blogs()" onfocusout="show_placeholder_searchbar_blogs()">
+<input type="text" name="blogs_searchbar" id="blogs_searchbar" class="form-control" placeholder="Search" style="margin-top: 20px;border: 2px solid lightgray;background-color: transparent;border-radius: 15px" data-aos="fade-down" data-aos-duration="1000" onkeyup="blogs_data_show()" onfocusin="hide_placeholder_searchbar_blogs()" onfocusout="show_placeholder_searchbar_blogs()">
 <?php }else{?>
-  <input type="text" name="blogs_searchbar" id="blogs_searchbar" class="form-control" placeholder="অনুসন্ধান করুন" style="margin-top: 20px;border: none;border-bottom: 2px solid lightgray;background-color: transparent;border-radius: 0px" data-aos="fade-down" data-aos-duration="1000" onkeyup="blogs_data_show()" onfocusin="hide_placeholder_searchbar_blogs()" onfocusout="show_placeholder_searchbar_blogs()">
+  <input type="text" name="blogs_searchbar" id="blogs_searchbar" class="form-control" placeholder="অনুসন্ধান করুন" style="margin-top: 20px;border: 2px solid lightgray;background-color: transparent;border-radius: 15px" data-aos="fade-down" data-aos-duration="1000" onkeyup="blogs_data_show()" onfocusin="hide_placeholder_searchbar_blogs()" onfocusout="show_placeholder_searchbar_blogs()">
 <?php }?>
 
 </div>

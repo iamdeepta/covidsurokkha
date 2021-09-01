@@ -424,7 +424,7 @@ require('admin/db.inc.php');
 
     <img src="admin/files/blogs_images/<?=$result1['blogs_image1']?>" style="width: 150px;height: auto;border-radius: 10px;margin-top: 10px" data-aos="fade-right" data-aos-duration="1000">
 
-    <p data-aos="fade-right" data-aos-duration="1000"><?=$result1['blogs_title_en']?></p>
+    <p data-aos="fade-right" data-aos-duration="1000" style="width: 150px"><?=$result1['blogs_title_en']?></p>
   <?php }else{?>
     <button class="btn" name="blogs_prev" id="blogs_prev_other" style="background-color: #a9c8c5;color: white;border-radius: 10px;width: 150px;pointer-events: none;cursor: no-drop;" data-aos="fade-right" data-aos-duration="1000" disabled="true"><span><i class="fas fa-long-arrow-alt-left" id="prev_arrow_other"></i></span> <span id="prev_text_other" style="margin-left: 10px">Previous</span> <span><i class="fas fa-long-arrow-alt-left" id="prev_arrow1_other" style="transform: translateX(50px);opacity: 0;margin-left: 10px;"></i></span></button>
   <?php }?>
@@ -432,14 +432,14 @@ require('admin/db.inc.php');
 
   <div style="display: flex;flex-direction: column;">
   <?php if($result4['blogs_id']!=@$_GET['id']){?> 
-    <a href="blogs-detail.php?id=<?=$result2['blogs_id']?>&lang=<?=@$_GET['lang']?>"><button class="btn" name="blogs_next" id="blogs_next" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 140px" data-aos="fade-left" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text" style="margin-right: 10px">Next</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow"></i></span></button></a>
+    <a href="blogs-detail.php?id=<?=$result2['blogs_id']?>&lang=<?=@$_GET['lang']?>"><button class="btn" name="blogs_next" id="blogs_next" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 150px" data-aos="fade-left" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text" style="margin-right: 10px">Next</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow"></i></span></button></a>
 
     <img src="admin/files/blogs_images/<?=$result2['blogs_image1']?>" style="width: 150px;height: auto;border-radius: 10px;margin-top: 10px" data-aos="fade-left" data-aos-duration="1000">
 
-    <p data-aos="fade-left" data-aos-duration="1000"><?=$result2['blogs_title_en']?></p>
+    <p data-aos="fade-left" data-aos-duration="1000" style="width: 150px"><?=$result2['blogs_title_en']?></p>
 
     <?php }else{?>
-      <button class="btn" name="blogs_next" id="blogs_next_other" style="background-color: #a9c8c5;color: white;border-radius: 10px;width: 140px;pointer-events: none;cursor: no-drop;" data-aos="fade-left" data-aos-duration="1000" disabled="true"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1_other" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text_other" style="margin-right: 10px">Next</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow_other"></i></span></button>
+      <button class="btn" name="blogs_next" id="blogs_next_other" style="background-color: #a9c8c5;color: white;border-radius: 10px;width: 150px;pointer-events: none;cursor: no-drop;" data-aos="fade-left" data-aos-duration="1000" disabled="true"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1_other" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text_other" style="margin-right: 10px">Next</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow_other"></i></span></button>
     <?php }?>
   </div>
 
@@ -453,7 +453,7 @@ require('admin/db.inc.php');
 
     <img src="admin/files/blogs_images/<?=$result1['blogs_image1']?>" style="width: 150px;height: auto;border-radius: 10px;margin-top: 10px" data-aos="fade-right" data-aos-duration="1000">
 
-    <p data-aos="fade-right" data-aos-duration="1000"><?=$result1['blogs_title_bn']?></p>
+    <p data-aos="fade-right" data-aos-duration="1000" style="width: 150px"><?=$result1['blogs_title_bn']?></p>
   <?php }else{?>
     <button class="btn" name="blogs_prev" id="blogs_prev_other" style="background-color: #a9c8c5;color: white;border-radius: 10px;width: 150px;pointer-events: none;cursor: no-drop;" data-aos="fade-right" data-aos-duration="1000" disabled="true"><span><i class="fas fa-long-arrow-alt-left" id="prev_arrow_other"></i></span> <span id="prev_text_other" style="margin-left: 10px">আগে</span> <span><i class="fas fa-long-arrow-alt-left" id="prev_arrow1_other" style="transform: translateX(50px);opacity: 0;margin-left: 10px;"></i></span></button>
   <?php }?>
@@ -461,14 +461,14 @@ require('admin/db.inc.php');
 
   <div style="display: flex;flex-direction: column;">
   <?php if($result4['blogs_id']!=@$_GET['id']){?> 
-    <a href="blogs-detail.php?id=<?=$result2['blogs_id']?>&lang=<?=@$_GET['lang']?>"><button class="btn" name="blogs_next" id="blogs_next" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 140px" data-aos="fade-left" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text" style="margin-right: 10px">পরে</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow"></i></span></button></a>
+    <a href="blogs-detail.php?id=<?=$result2['blogs_id']?>&lang=<?=@$_GET['lang']?>"><button class="btn" name="blogs_next" id="blogs_next" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 150px" data-aos="fade-left" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text" style="margin-right: 10px">পরে</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow"></i></span></button></a>
 
     <img src="admin/files/blogs_images/<?=$result2['blogs_image1']?>" style="width: 150px;height: auto;border-radius: 10px;margin-top: 10px" data-aos="fade-left" data-aos-duration="1000">
 
-    <p data-aos="fade-left" data-aos-duration="1000"><?=$result2['blogs_title_bn']?></p>
+    <p data-aos="fade-left" data-aos-duration="1000" style="width: 150px"><?=$result2['blogs_title_bn']?></p>
 
     <?php }else{?>
-      <button class="btn" name="blogs_next" id="blogs_next_other" style="background-color: #a9c8c5;color: white;border-radius: 10px;width: 140px;pointer-events: none;cursor: no-drop;" data-aos="fade-left" data-aos-duration="1000" disabled="true"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1_other" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text_other" style="margin-right: 10px">পরে</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow_other"></i></span></button>
+      <button class="btn" name="blogs_next" id="blogs_next_other" style="background-color: #a9c8c5;color: white;border-radius: 10px;width: 150px;pointer-events: none;cursor: no-drop;" data-aos="fade-left" data-aos-duration="1000" disabled="true"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1_other" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text_other" style="margin-right: 10px">পরে</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow_other"></i></span></button>
     <?php }?>
   </div>
 

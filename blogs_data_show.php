@@ -81,10 +81,20 @@
 if(isset($_POST['blogs_data_show'])){
 
 	require('admin/db.inc.php');
+
+    $blogs_searchbar = $_POST['blogs_searchbar'];
     
-	$start = $_POST['start'];
-	$limit_text = $_POST['limit_text'];
-	$blogs_query = mysqli_query($dbc, 'SELECT * from tbl_blogs where blogs_status=0 order by blogs_id desc '.$limit_text.' '.$start.'');
+	//$start = $_POST['start'];
+	//$limit_text = $_POST['limit_text'];
+
+    if($blogs_searchbar==''){
+
+	$blogs_query = mysqli_query($dbc, 'SELECT * from tbl_blogs where blogs_status=0 order by blogs_id desc');
+
+    }else{
+
+        $blogs_query = mysqli_query($dbc, "SELECT * from tbl_blogs where blogs_status=0 and blogs_title_en LIKE '%$blogs_searchbar%' order by blogs_id desc");
+    }
 
     
    include 'english_to_bangla.php';

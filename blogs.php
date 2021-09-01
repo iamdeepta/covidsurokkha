@@ -90,6 +90,22 @@ require('admin/db.inc.php');
     transition: 0.5s !important;
   }
 
+  input[name="blogs_searchbar"]:focus{
+
+    outline: 0 none !important;
+   box-shadow: 0 1px 1px transparent inset, 0 0 8px transparent !important;
+   /*border: 1px solid transparent !important;*/
+   border-bottom: 2px solid #01cfbe !important;
+   transition: 0.5s !important;
+  }
+
+  #blogs_searchbar::placeholder{
+
+    float: left !important;
+    font-size: 16px !important;
+    margin-top: 0px !important;
+  }
+
   @media screen and (max-width: 460px) {
 
     .blogs_card{
@@ -105,6 +121,11 @@ require('admin/db.inc.php');
     #blog_tag_div{
 
       left: calc(100% - 160px) !important;
+    }
+
+    #blogs_searchbar_icon{
+
+      left: 93% !important;
     }
 
   }
@@ -160,6 +181,14 @@ require('admin/db.inc.php');
   <h2 style="font-size: 30px;margin-top: 30px" class="notranslate">সরকারি টেস্ট প্রতিষ্ঠান</h2>
 
 <?php }?> -->
+<i class="fas fa-search" id="blogs_searchbar_icon" style="position: absolute;top: 80px;left: 98%" data-aos="fade-down" data-aos-duration="1000"></i>
+
+<?php if(@$_GET['lang']=='en'){?>
+<input type="text" name="blogs_searchbar" id="blogs_searchbar" class="form-control" placeholder="Search" style="margin-top: 20px;border: none;border-bottom: 2px solid lightgray;background-color: transparent;border-radius: 0px" data-aos="fade-down" data-aos-duration="1000" onkeyup="blogs_data_show()" onfocusin="hide_placeholder_searchbar_blogs()" onfocusout="show_placeholder_searchbar_blogs()">
+<?php }else{?>
+  <input type="text" name="blogs_searchbar" id="blogs_searchbar" class="form-control" placeholder="অনুসন্ধান করুন" style="margin-top: 20px;border: none;border-bottom: 2px solid lightgray;background-color: transparent;border-radius: 0px" data-aos="fade-down" data-aos-duration="1000" onkeyup="blogs_data_show()" onfocusin="hide_placeholder_searchbar_blogs()" onfocusout="show_placeholder_searchbar_blogs()">
+<?php }?>
+
 </div>
 </div>
 
@@ -284,6 +313,7 @@ var limit_text = 'limit';
   function blogs_data_show(start,limit_text){
 
   var blogs_data_show = 'blogs_data_show';
+  var blogs_searchbar = $('#blogs_searchbar').val();
   //var start = 0;
 
     var url = window.location.href;
@@ -299,7 +329,8 @@ var limit_text = 'limit';
       blogs_data_show: blogs_data_show,
       lastSegment: lastSegment,
       start: start,
-      limit_text: limit_text
+      limit_text: limit_text,
+      blogs_searchbar: blogs_searchbar
     },
 
     success: function(data){
@@ -311,6 +342,8 @@ var limit_text = 'limit';
   });
 
 }
+
+
 
 $(document).ready(function() {
 
@@ -344,6 +377,21 @@ $(document).ready(function() {
 		$('#blur_bg').css('display','none');
 		
 	}
+
+  function hide_placeholder_searchbar_blogs(){
+
+    $('#blogs_searchbar').attr('placeholder','');
+  }
+
+  function show_placeholder_searchbar_blogs(){
+
+    if(lastSegment=='en'){
+
+    $('#blogs_searchbar').attr('placeholder','Search');
+  }else{
+    $('#blogs_searchbar').attr('placeholder','অনুসন্ধান করুন');
+  }
+  }
 
 	$(document).ready(function(){
 

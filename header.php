@@ -24,7 +24,9 @@ if($id!=''){
 	.info_icon_link:hover .dropdown-menu{
 
 		display: block !important;
+		opacity: 1;
 		transition: 0.5s;
+		transform: translateY(0px);
 	}
 
 	.info_icon_link:not(:hover) #info_icon{
@@ -36,8 +38,11 @@ if($id!=''){
 
 	.info_icon_link:not(:hover) .dropdown-menu{
 
-		display: none !important;
+		/*display: none !important;*/
+		display: block !important;
 		transition: 0.5s;
+		transform: translateY(50px);
+		opacity: 0;
 
 
 	}

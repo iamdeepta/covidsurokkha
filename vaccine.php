@@ -25,17 +25,17 @@ require('admin/db.inc.php');
 </script>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="description" content="Get vaccine information from covidsurokkha. Vaccine registration, card, certificate for passport holder are all together.">
+<meta name="description" content="Discover vaccine information in Bangladesh by visiting covidsurokkha. Whether you are a Bangaldeshi or an abroad traveller searching for covid - 19 vaccine information in Bangladesh, we got you covered. Help covidsurokkha protect people.">
 <meta name="keywords" content="covid surokkha, covid surokkha, Covidsurokkha, covid, surokkha, surokkha bd, surokkha app bangladesh, surokkha app bd, covid cases, covid deaths, hospital beds availability, icu beds, general beds, ambulance service, COVID-19, covid centre, covid hospital bed availability, total icu beds in bangladesh, covid19health, covid bed status, surokkha covid, covid hospital bed list, covid hospital bed near me, max hospital covid bed availability, covid ambulance number, covid ambulance near me, covid and ambulance, covid ambulance contact number, covid ambulance cost, ambulance for covid patient, covid ambulance helpline, covid test centres near me, covid test centres in dhaka, covid test centres around me, are the covid test centres open, is there a covid 19 testing centre near me, covid govt test centres near me, government approved covid test centres near me, government approved covid test centres in bangladesh, government covid test centres in dhaka, covid private test centres near me, government approved private covid test centres, coronavirus private test centre near me, surokkha covid bd, covid-19 surokkha.gov.bd, surokkha for covid test, surokkha app for covid 19 in bd, covid surokkha kit, surokkha covid report, covid symptom checker, covid symptom checker app, covid 19 symptom checker, symptoms check for covid, covid death in bangladesh, covid death today, covid death in bangladesh today, covid death bd, covid death cases in bangladesh, covid cases bangladesh, covid cases in bangladesh today, covid cases today, covid cases bangladesh today, covid cases bangladesh yesterday, covid cases bangladesh death, covid hospital icu beds, covid hospital icu bed availability, covid hospital bed capacity, test centres for international flights, what happens in icu for covid, covid ambulance location in dhaka, covid ambulance in bangladesh, covid hospital phone number, covid ambulance phone number, surokkha for covid patients, how to get covidsurokkha app, covidsurokkha.com, surokkha for people in bangldesh">
 <meta name="author" content="covidsurokkha">
-<meta property="og:description" content="Get vaccine information from covidsurokkha. Vaccine registration, card, certificate for passport holder are all together.">
+<meta property="og:description" content="Discover vaccine information in Bangladesh by visiting covidsurokkha. Whether you are a Bangaldeshi or an abroad traveller searching for covid - 19 vaccine information in Bangladesh, we got you covered. Help covidsurokkha protect people.">
 <meta property="og:image" content="assets/images/covidsurokkha.png" />
 <meta property="og:url" content="https://covidsurokkha.com" />
-<meta property="og:title" content="covidsurokkha | Vaccine registration | Vaccine certificate" />
-<meta property="twitter:description" content="Get vaccine information from covidsurokkha. Vaccine registration, card, certificate for passport holder are all together.">
+<meta property="og:title" content="Covid- 19 Vaccine Information In Bangladesh." />
+<meta property="twitter:description" content="Discover vaccine information in Bangladesh by visiting covidsurokkha. Whether you are a Bangaldeshi or an abroad traveller searching for covid - 19 vaccine information in Bangladesh, we got you covered. Help covidsurokkha protect people.">
 <meta property="twitter:image" content="assets/images/covidsurokkha.png" />
 <meta property="twitter:url" content="https://covidsurokkha.com" />
-<meta property="twitter:title" content="covidsurokkha | Vaccine registration | Vaccine certificate" />
+<meta property="twitter:title" content="Covid- 19 Vaccine Information In Bangladesh." />
 <meta name="google-site-verification" content="E2zxAXI-DAfIdeJU5hy1trrKCWqQdqTfcaPSf9NTpVU" />
 
 <link rel="icon" href="assets/images/onlylogo.png" type="image/png" />
@@ -43,7 +43,7 @@ require('admin/db.inc.php');
 
 <link rel="canonical" href="https://covidsurokkha.com/blogs.php" />
 
-<title class="notranslate">covidsurokkha | Vaccine registration | Vaccine certificate</title>
+<title class="notranslate">Covid- 19 Vaccine Information In Bangladesh.</title>
 
 <?php include 'blogs_css.php';?>
 
@@ -137,7 +137,8 @@ require('admin/db.inc.php');
 
 <div class="body_wrapper" id="body_wrapper">
 
-  <span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">Get vaccine information from covidsurokkha. Vaccine registration, card, certificate for passport holder are all together.</h1></span>
+  <span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">Vaccine Information In Bangladesh</h1></span>
+  <span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">Why should you get vaccinated?</h1></span>
 	<!-- <span style="height:200px;margin-top:-200px;display:block;visibility:hidden"><img src="assets/images/covidshebalogoreview.jpg"></span> -->
 
 <!-- <div class="preloader">

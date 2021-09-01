@@ -88,6 +88,107 @@ require('admin/db.inc.php');
     color: #fff !important;
   }
 
+  #blogs_prev:hover #prev_arrow{
+
+    transform: translateX(-50px);
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  #blogs_prev:hover #prev_text{
+
+    margin-left: -10px !important;
+    transition: 0.5s;
+  }
+
+  #blogs_prev:hover #prev_arrow1{
+
+    transform: translateX(0px) !important;
+    transition: 0.5s;
+    opacity: 1 !important;
+  }
+
+  #blogs_prev:hover{
+
+    background-color: #58547e !important;
+    box-shadow: 0px 0px 10px 0px rgb(0.2,0.2,0.2,0.2);
+    transition: 0.5s;
+  }
+
+  #blogs_prev:not(:hover) #prev_arrow{
+
+    transition: 0.5s;
+  }
+
+  #blogs_prev:not(:hover) #prev_text{
+
+    transition: 0.5s;
+  }
+
+  #blogs_prev:not(:hover) #prev_arrow1{
+
+    transition: 0.5s;
+  }
+
+  #blogs_prev:not(:hover){
+    transition: 0.5s;
+  }
+
+
+  #blogs_next:hover #next_arrow{
+
+    transform: translateX(50px);
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  #blogs_next:hover #next_text{
+
+    margin-left: 10px !important;
+    transition: 0.5s;
+  }
+
+  #blogs_next:hover #next_arrow1{
+
+    transform: translateX(0px) !important;
+    transition: 0.5s;
+    opacity: 1 !important;
+  }
+
+  #blogs_next:hover{
+
+    background-color: #58547e !important;
+    box-shadow: 0px 0px 10px 0px rgb(0.2,0.2,0.2,0.2);
+    transition: 0.5s;
+  }
+
+  #blogs_next:not(:hover) #next_arrow{
+
+    transition: 0.5s;
+  }
+
+  #blogs_next:not(:hover) #next_text{
+
+    transition: 0.5s;
+  }
+
+  #blogs_next:not(:hover) #next_arrow1{
+
+    transition: 0.5s;
+  }
+
+  #blogs_next:not(:hover){
+    transition: 0.5s;
+  }
+
+  button[name="blogs_prev"]:focus,button[name="blogs_next"]:focus{
+
+    outline: 0 none;
+   box-shadow: 0 1px 1px transparent inset, 0 0 8px transparent;
+   border: 1px solid transparent !important;
+   transition: 0.5s !important;
+  }
+
   @media screen and (max-width: 460px) {
 
     .main_menu .right_burger .nav li .menu_btn img{
@@ -155,6 +256,11 @@ require('admin/db.inc.php');
   #purple_bg{
 
     height: 380px !important;
+  }
+
+  #prev_next_div{
+
+    margin-top: 50px !important;
   }
 
 }
@@ -287,7 +393,15 @@ require('admin/db.inc.php');
   </div>
 
 
+
 </div>
+
+<div class="container" id="prev_next_div" style="display: flex;justify-content: space-between;flex-direction: row;">
+    
+    <button class="btn" name="blogs_prev" id="blogs_prev" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 150px;" data-aos="fade-right" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-left" id="prev_arrow"></i></span> <span id="prev_text" style="margin-left: 10px">Previous</span> <span><i class="fas fa-long-arrow-alt-left" id="prev_arrow1" style="transform: translateX(50px);opacity: 0;margin-left: 10px;"></i></span></button>
+
+    <button class="btn" name="blogs_next" id="blogs_next" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 140px" data-aos="fade-left" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text" style="margin-right: 10px">Next</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow"></i></span></button>
+  </div>
 
 </section>
 
@@ -452,7 +566,7 @@ var lastSegment = parts.pop() || parts.pop();
 
     rating_review();
 
-	googleTranslator();
+	//googleTranslator();
 
 		$(window).one('scroll',function(){
 

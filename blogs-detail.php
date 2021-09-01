@@ -11,6 +11,22 @@ require('admin/db.inc.php');
 
   $result=mysqli_fetch_array($blogs_query, MYSQLI_ASSOC);
 
+  $blogs_query_prev = mysqli_query($dbc, "SELECT * from tbl_blogs where blogs_id<$id and blogs_status=0 order by blogs_id desc");
+
+  $result1=mysqli_fetch_array($blogs_query_prev, MYSQLI_ASSOC);
+
+  $blogs_query_next = mysqli_query($dbc, "SELECT * from tbl_blogs where blogs_id>$id and blogs_status=0 order by blogs_id asc");
+
+  $result2=mysqli_fetch_array($blogs_query_next, MYSQLI_ASSOC);
+
+  $blogs_query_first = mysqli_query($dbc, "SELECT * from tbl_blogs where blogs_status=0 order by blogs_id asc limit 1");
+
+  $result3=mysqli_fetch_array($blogs_query_first, MYSQLI_ASSOC);
+
+  $blogs_query_last = mysqli_query($dbc, "SELECT * from tbl_blogs where blogs_status=0 order by blogs_id desc limit 1");
+
+  $result4=mysqli_fetch_array($blogs_query_last, MYSQLI_ASSOC);
+
     
    include 'english_to_bangla.php';
 
@@ -396,19 +412,38 @@ require('admin/db.inc.php');
 
 </div>
 
+
+<!-- blogs next and previous buttons -->
+
 <?php if(@$_GET['lang']=='en'){?>
 <div class="container" id="prev_next_div" style="display: flex;justify-content: space-between;flex-direction: row;">
-    
-    <button class="btn" name="blogs_prev" id="blogs_prev" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 150px;" data-aos="fade-right" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-left" id="prev_arrow"></i></span> <span id="prev_text" style="margin-left: 10px">Previous</span> <span><i class="fas fa-long-arrow-alt-left" id="prev_arrow1" style="transform: translateX(50px);opacity: 0;margin-left: 10px;"></i></span></button>
+   
+   <?php if($result3['blogs_id']!=@$_GET['id']){?> 
+    <a href="blogs-detail.php?id=<?=$result1['blogs_id']?>&lang=<?=@$_GET['lang']?>"><button class="btn" name="blogs_prev" id="blogs_prev" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 150px;" data-aos="fade-right" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-left" id="prev_arrow"></i></span> <span id="prev_text" style="margin-left: 10px">Previous</span> <span><i class="fas fa-long-arrow-alt-left" id="prev_arrow1" style="transform: translateX(50px);opacity: 0;margin-left: 10px;"></i></span></button></a>
+  <?php }else{?>
+    <button class="btn" name="blogs_prev" id="blogs_prev_other" style="background-color: #a9c8c5;color: white;border-radius: 10px;width: 150px;pointer-events: none;cursor: no-drop;" data-aos="fade-right" data-aos-duration="1000" disabled="true"><span><i class="fas fa-long-arrow-alt-left" id="prev_arrow_other"></i></span> <span id="prev_text_other" style="margin-left: 10px">Previous</span> <span><i class="fas fa-long-arrow-alt-left" id="prev_arrow1_other" style="transform: translateX(50px);opacity: 0;margin-left: 10px;"></i></span></button>
+  <?php }?>
 
-    <button class="btn" name="blogs_next" id="blogs_next" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 140px" data-aos="fade-left" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text" style="margin-right: 10px">Next</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow"></i></span></button>
+  <?php if($result4['blogs_id']!=@$_GET['id']){?> 
+    <a href="blogs-detail.php?id=<?=$result2['blogs_id']?>&lang=<?=@$_GET['lang']?>"><button class="btn" name="blogs_next" id="blogs_next" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 140px" data-aos="fade-left" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text" style="margin-right: 10px">Next</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow"></i></span></button></a>
+    <?php }else{?>
+      <button class="btn" name="blogs_next" id="blogs_next_other" style="background-color: #a9c8c5;color: white;border-radius: 10px;width: 140px;pointer-events: none;cursor: no-drop;" data-aos="fade-left" data-aos-duration="1000" disabled="true"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1_other" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text_other" style="margin-right: 10px">Next</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow_other"></i></span></button>
+    <?php }?>
   </div>
 <?php }else{?>
   <div class="container" id="prev_next_div" style="display: flex;justify-content: space-between;flex-direction: row;">
-    
-    <button class="btn" name="blogs_prev" id="blogs_prev" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 150px;" data-aos="fade-right" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-left" id="prev_arrow"></i></span> <span id="prev_text" style="margin-left: 10px">আগে</span> <span><i class="fas fa-long-arrow-alt-left" id="prev_arrow1" style="transform: translateX(50px);opacity: 0;margin-left: 10px;"></i></span></button>
+   
+   <?php if($result3['blogs_id']!=@$_GET['id']){?> 
+    <a href="blogs-detail.php?id=<?=$result1['blogs_id']?>&lang=<?=@$_GET['lang']?>"><button class="btn" name="blogs_prev" id="blogs_prev" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 150px;" data-aos="fade-right" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-left" id="prev_arrow"></i></span> <span id="prev_text" style="margin-left: 10px">আগে</span> <span><i class="fas fa-long-arrow-alt-left" id="prev_arrow1" style="transform: translateX(50px);opacity: 0;margin-left: 10px;"></i></span></button></a>
+  <?php }else{?>
+    <button class="btn" name="blogs_prev" id="blogs_prev_other" style="background-color: #a9c8c5;color: white;border-radius: 10px;width: 150px;pointer-events: none;cursor: no-drop;" data-aos="fade-right" data-aos-duration="1000" disabled="true"><span><i class="fas fa-long-arrow-alt-left" id="prev_arrow_other"></i></span> <span id="prev_text_other" style="margin-left: 10px">আগে</span> <span><i class="fas fa-long-arrow-alt-left" id="prev_arrow1_other" style="transform: translateX(50px);opacity: 0;margin-left: 10px;"></i></span></button>
+  <?php }?>
 
-    <button class="btn" name="blogs_next" id="blogs_next" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 140px" data-aos="fade-left" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text" style="margin-right: 10px">পরে</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow"></i></span></button>
+  <?php if($result4['blogs_id']!=@$_GET['id']){?> 
+    <a href="blogs-detail.php?id=<?=$result2['blogs_id']?>&lang=<?=@$_GET['lang']?>"><button class="btn" name="blogs_next" id="blogs_next" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 140px" data-aos="fade-left" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text" style="margin-right: 10px">পরে</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow"></i></span></button></a>
+    <?php }else{?>
+      <button class="btn" name="blogs_next" id="blogs_next_other" style="background-color: #a9c8c5;color: white;border-radius: 10px;width: 140px;pointer-events: none;cursor: no-drop;" data-aos="fade-left" data-aos-duration="1000" disabled="true"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1_other" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text_other" style="margin-right: 10px">পরে</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow_other"></i></span></button>
+    <?php }?>
   </div>
 <?php }?>
 

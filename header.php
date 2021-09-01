@@ -193,12 +193,12 @@ if($id!=''){
         </a>
         <?php if(@$_GET['lang']=='en'){?>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border-radius: 8px;margin-left: -120px;display: none;margin-top: 10px">
-          <a class="dropdown-item" href="approved-laboratories.php?lang=en" style="font: icon;padding: 5px;color: #01cfbe">Covid Test Centres For International Flights</a>
+          <a class="dropdown-item" href="approved-laboratories.php?lang=en" style="font: icon;padding: 5px;color: #01cfbe !important">Covid Test Centres For International Flights</a>
           
         </div>
     <?php }else{?>
     	<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border-radius: 8px;margin-left: -120px;display: none;margin-top: 10px">
-          <a class="dropdown-item notranslate" href="approved-laboratories.php" style="font: icon;padding: 5px;color: #01cfbe">আন্তর্জাতিক ভ্রমণের জন্য কোভিড টেস্ট ল্যাবরেটরিজ</a>
+          <a class="dropdown-item notranslate" href="approved-laboratories.php" style="font: icon;padding: 5px;color: #01cfbe !important">আন্তর্জাতিক ভ্রমণের জন্য কোভিড টেস্ট ল্যাবরেটরিজ</a>
           
         </div>
     <?php }?>

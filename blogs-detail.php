@@ -396,12 +396,21 @@ require('admin/db.inc.php');
 
 </div>
 
+<?php if(@$_GET['lang']=='en'){?>
 <div class="container" id="prev_next_div" style="display: flex;justify-content: space-between;flex-direction: row;">
     
     <button class="btn" name="blogs_prev" id="blogs_prev" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 150px;" data-aos="fade-right" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-left" id="prev_arrow"></i></span> <span id="prev_text" style="margin-left: 10px">Previous</span> <span><i class="fas fa-long-arrow-alt-left" id="prev_arrow1" style="transform: translateX(50px);opacity: 0;margin-left: 10px;"></i></span></button>
 
     <button class="btn" name="blogs_next" id="blogs_next" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 140px" data-aos="fade-left" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text" style="margin-right: 10px">Next</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow"></i></span></button>
   </div>
+<?php }else{?>
+  <div class="container" id="prev_next_div" style="display: flex;justify-content: space-between;flex-direction: row;">
+    
+    <button class="btn" name="blogs_prev" id="blogs_prev" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 150px;" data-aos="fade-right" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-left" id="prev_arrow"></i></span> <span id="prev_text" style="margin-left: 10px">আগে</span> <span><i class="fas fa-long-arrow-alt-left" id="prev_arrow1" style="transform: translateX(50px);opacity: 0;margin-left: 10px;"></i></span></button>
+
+    <button class="btn" name="blogs_next" id="blogs_next" style="background-color: #01cfbe;color: white;border-radius: 10px;width: 140px" data-aos="fade-left" data-aos-duration="1000"><span><i class="fas fa-long-arrow-alt-right" id="next_arrow1" style="transform: translateX(-50px);opacity: 0"></i></span> <span id="next_text" style="margin-right: 10px">পরে</span> <span><i class="fas fa-long-arrow-alt-right" id="next_arrow"></i></span></button>
+  </div>
+<?php }?>
 
 </section>
 

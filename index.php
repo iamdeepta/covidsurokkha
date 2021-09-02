@@ -394,6 +394,8 @@ Track</a>
 
 <?php include 'index_js.php';?>
 
+<?php include 'master_searchbar.php';?>
+
 <?php //include 'rating-modal.php';?>
 <div id="rating_section" class="notranslate"></div>
 

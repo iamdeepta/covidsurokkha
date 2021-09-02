@@ -46,6 +46,11 @@ if($id!=''){
 
 
 	}
+
+	.navbar_fixed .main_menu .container .navbar .navbar-collapse ul #master_searchbar_li{
+
+		margin-top: 21px !important;
+	}
 </style>
 <header class="header_area">
 <!-- <ul class="nav menu_social flex-column">
@@ -204,6 +209,12 @@ if($id!=''){
     <?php }?>
       </li>
 
+
+    <li class="master_searchbar_li" id="master_searchbar_li" style="margin-top: 30px">
+	<i id="master_searchbar_icon" class="fas fa-search" style="font-size: 18px;cursor: pointer;" onclick="master_searchbar()"></i>
+	</li>
+
+
 <?php if(@$_GET['lang']=='en'){?>
 <li id="choose_lang1"><a href="#" id="choose_lang">Language: </a></li>
 <?php }else{?>
@@ -237,7 +248,12 @@ if($id!=''){
 <div class="search_btn" data-toggle="modal" data-target="">
 <!-- <img id="search_header" src="assets/images/icon/search.png" alt="" /> -->
 <ul class="nav navbar-nav navbar-right" id="mbl_lang" style="display: none;">
-<li class="checker_btn" style="margin-left: -40px;margin-top:1px">
+
+<li class="master_searchbar_li_mbl" id="master_searchbar_li_mbl" style="margin-top: 0px;margin-left: 0px;padding-right: 52px">
+	<i id="master_searchbar_icon_mbl" class="fas fa-search" style="font-size: 17px;cursor: pointer;padding-top: 3px" onclick="master_searchbar()"></i>
+	</li>
+
+<li class="checker_btn" style="margin-left: -40px;margin-top:-30px">
 	<?php if(@$_GET['lang']=='en'){?>
 		<a id="bengali_btn" href="javascript:window.history.replaceState(null, null, '?<?php echo $id;?>lang=bn'); window.location.href=window.location.href" style="background: #01cfbe !important;padding: 5px;border-radius: 4px;color: white;font-size: 12px;"><!-- <i class="linearicons-pulse"></i> --> BENGALI</a>
 	<?php }elseif(@$_GET['lang']=='bn'){?>
@@ -246,6 +262,8 @@ if($id!=''){
 	<a class="notranslate" id="english_btn" href="javascript:window.history.replaceState(null, null, '?<?php echo $id;?>lang=en'); window.location.href=window.location.href" style="background: #01cfbe !important;padding: 5px;border-radius: 4px;color: white;font-size: 12px;"><!-- <i class="linearicons-pulse"></i> --> ইংরেজি</a>
 <?php }?>
 </li>
+
+
 </ul>
 </div>
 </li>

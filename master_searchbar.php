@@ -95,17 +95,29 @@
 		  	top: 14% !important;
 		  	left: 82% !important;
 		  }
+
+		  .master_searchbar_content_div{
+
+		  	left: 0% !important;
+		  }
+
+		  #master_searchbar_content_title{
+
+		  	font-size: 1.3rem !important;
+		  }
 	}
 </style>
 
+
+<!-- searchbar background -->
 <div class="master_searchbar_section inactive_master_searchbar_section" style="position: fixed;z-index: 99999999999999999999;top: 0px;bottom: 0px;left: 0px;right: 0px;width: 100vw;height: auto;background-color: white">
 	
 
 </div>
 
-<div class="master_searchbar_close_icon inactive_master_searchbar_close_icon" style="position: fixed;z-index: 99999999999999999999;top: 40px;left: 90%;"><i class="fas fa-times-circle" style="font-size: 36px;color: #58547e;cursor: pointer;" onclick="close_master_searchbar()"></i></div>
 
 
+<!-- searchbar input -->
 <div class="container master_searchbar_input_div inactive_master_searchbar_input_div" style="position: fixed;z-index: 99999999999999999999;top: 10%;left: 10%;">
 	
 	<?php if(@$_GET['lang']=='en'){?>
@@ -113,11 +125,56 @@
 <?php }else{?>
 	<input type="text" name="master_searchbar_input" id="master_searchbar_input" class="form-control" placeholder="অনুসন্ধান করুন" style="margin-top: 20px;border:none;border-bottom: 3px solid #58547e;background-color: transparent;border-radius: 0px;width: 80vw" data-aos="fade-down" data-aos-duration="1000" onkeyup="master_searchbar_data_show()" onfocusin="hide_placeholder_master_searchbar()" onfocusout="show_placeholder_master_searchbar()">
 <?php }?>
+
+<!-- searchbar content -->
+<div class="container master_searchbar_content_div inactive_master_searchbar_content_div" style="position: absolute;z-index: 99999999999999999999;top: 120%;left: 0%;overflow-y: auto;height: 77vh">
+	
+
 </div>
 
-<i class="fas fa-search master_searchbar_search_icon inactive_master_searchbar_search_icon" id="master_searchbar_search_icon" style="position: fixed;top: 13%;left: 87%;z-index: 99999999999999999999"></i>
+</div>
+
+<!-- searchbar close icon -->
+<div class="master_searchbar_close_icon inactive_master_searchbar_close_icon" style="position: fixed;z-index: 99999999999999999999;top: 40px;left: 90%;"><i class="fas fa-times-circle" style="font-size: 36px;color: #58547e;cursor: pointer;" onclick="close_master_searchbar()"></i></div>
+
+<!-- searchbar search icon -->
+<i class="fas fa-search master_searchbar_search_icon inactive_master_searchbar_search_icon" id="master_searchbar_search_icon" style="position: absolute;top: 13%;left: 87%;z-index: 99999999999999999999"></i>
+
+
 
 <script type="text/javascript">
+
+
+	function master_searchbar_data_show(){
+
+  var master_searchbar_data_show = 'master_searchbar_data_show';
+  var master_searchbar_input = $('#master_searchbar_input').val();
+
+
+    var url = window.location.href;
+    var parts = url.split('=');
+    var lastSegment = parts.pop() || parts.pop();
+
+    $.ajax({
+
+    url: 'master_searchbar_data_show.php',
+    type: 'post',
+    data: {
+
+      master_searchbar_data_show: master_searchbar_data_show,
+      lastSegment: lastSegment,
+      master_searchbar_input: master_searchbar_input
+    },
+
+    success: function(data){
+
+      $('.master_searchbar_content_div').html(data);
+    
+    }
+
+  });
+
+	}
 	
 	function master_searchbar(){
 

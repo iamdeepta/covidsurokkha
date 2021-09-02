@@ -654,6 +654,8 @@ Answering to covid related queries either through email or our facebook page
   })
   </script>
 
+  <?php include 'master_searchbar.php';?>
+
   <div id="rating_section" class="notranslate"></div>
 
   <?php include 'header_scroll_indicator_js.php';?>

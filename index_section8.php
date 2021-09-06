@@ -353,7 +353,7 @@ $output .= '</div>
     background: rgb(0.6,0.6,0.6,0.6);
     padding: 7px 20px !important;
     border-radius: 50%;
-    margin-left: 97vw;
+    margin-left: 1140px;
     position: absolute;
   }
 
@@ -615,13 +615,13 @@ if(screen.width<=460){
 }else{
 
   
-  //$('#blogs_container').addClass('container');
+  $('#blogs_container').addClass('container');
 
 
   owl.owlCarousel({
     loop:true,
     nav:true,
-    margin:20,
+    margin:200,
     autoplay:true,
     autoplayTimeout:5000,
     autoplaySpeed: 500,
@@ -634,10 +634,10 @@ if(screen.width<=460){
             items:3
         },            
         960:{
-            items:4
+            items:3
         },
         1200:{
-            items:4
+            items:3
         }
     }
 });

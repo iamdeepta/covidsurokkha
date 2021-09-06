@@ -229,7 +229,7 @@ var lastSegment = parts.pop() || parts.pop();
   	
 if (screen.width <= 460) {
 
-
+if(lastSegment=='en'){
 $('#dtBasicExample2').DataTable({
 
     'lengthMenu':[10,15,20,50]
@@ -240,17 +240,91 @@ $('#dtBasicExample3').DataTable({
     'lengthMenu':[10,15,20,50]
   });
 }else{
-/*$('#dtBasicExample').DataTable();*/
 
+  $('#dtBasicExample2').DataTable({
+
+    'lengthMenu':[10,15,20,50],
+    "language": {
+            "lengthMenu": "দেখান _MENU_ এন্ট্রি",
+            "zeroRecords": "কোনো রেকর্ড পাওয়া যায়নি",
+            "info": "Showing page _PAGE_ of _PAGES_",
+            "infoEmpty": "কোনো রেকর্ড পাওয়া যায়নি",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+            "sSearch": "অনুসন্ধান করুন:",
+            'paginate': {
+          'previous': 'আগে',
+          'next': 'পরে'
+        }
+        }
+  });
+
+$('#dtBasicExample3').DataTable({
+
+    'lengthMenu':[10,15,20,50],
+    "language": {
+            "lengthMenu": "দেখান _MENU_ এন্ট্রি",
+            "zeroRecords": "কোনো রেকর্ড পাওয়া যায়নি",
+            "info": "Showing page _PAGE_ of _PAGES_",
+            "infoEmpty": "কোনো রেকর্ড পাওয়া যায়নি",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+            "sSearch": "অনুসন্ধান করুন:",
+            'paginate': {
+          'previous': 'আগে',
+          'next': 'পরে'
+        }
+        }
+  });
+
+}
+}else{
+/*$('#dtBasicExample').DataTable();*/
+if(lastSegment=='en'){
 $('#dtBasicExample2').DataTable();
 
 $('#dtBasicExample3').DataTable();
+}else{
+
+  $('#dtBasicExample2').DataTable({
+
+    "language": {
+            "lengthMenu": "দেখান _MENU_ এন্ট্রি",
+            "zeroRecords": "কোনো রেকর্ড পাওয়া যায়নি",
+            "info": "Showing page _PAGE_ of _PAGES_",
+            "infoEmpty": "কোনো রেকর্ড পাওয়া যায়নি",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+            "sSearch": "অনুসন্ধান করুন:",
+            'paginate': {
+          'previous': 'আগে',
+          'next': 'পরে'
+        }
+        }
+
+  });
+
+$('#dtBasicExample3').DataTable({
+
+  "language": {
+            "lengthMenu": "দেখান _MENU_ এন্ট্রি",
+            "zeroRecords": "কোনো রেকর্ড পাওয়া যায়নি",
+            "info": "Showing page _PAGE_ of _PAGES_",
+            "infoEmpty": "কোনো রেকর্ড পাওয়া যায়নি",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+            "sSearch": "অনুসন্ধান করুন:",
+            'paginate': {
+          'previous': 'আগে',
+          'next': 'পরে'
+        }
+        }
+});
+}
 
 
 }
  
 
   $('.dataTables_length').addClass('bs-select');
+
+  var search_icon = $('input[type="search"]').attr('placeholder','🔍');
 
 //console.log($('#division_table'));
 //customize table components

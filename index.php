@@ -383,7 +383,85 @@ Track</a>
 
 
 <?php //include 'frequently_asked_question.php';?>
-<section class="answers_area p_100 faq_section" id="faq_section" data-aos="fade-right" data-aos-duration="1000"></section>
+<style type="text/css">
+  input[name="faq_searchbar"]:focus{
+
+    outline: 0 none !important;
+   box-shadow: 0 1px 1px transparent inset, 0 0 8px transparent !important;
+   /*border: 1px solid transparent !important;*/
+   border-bottom: 2px solid #01cfbe !important;
+   transition: 0.5s !important;
+  }
+
+  #faq_searchbar::placeholder{
+
+    float: left !important;
+    font-size: 16px !important;
+    margin-top: 0px !important;
+  }
+
+  @media screen and (max-width: 460px){
+
+    .faq_searchbar{
+
+      border-radius: 20px !important;
+      border: 2px solid #58547e !important;
+    }
+
+    input[name="faq_searchbar"]:focus{
+
+    outline: 0 none !important;
+   box-shadow: 0 1px 1px transparent inset, 0 0 8px transparent !important;
+   /*border: 1px solid transparent !important;*/
+   border: 2px solid #01cfbe !important;
+   transition: 0.5s !important;
+  }
+
+    #faq_searchbar_icon{
+
+      left: 93% !important;
+      display: none !important;
+    }
+
+    #faq_searchbar::placeholder{
+
+    float: none !important;
+  }
+  }
+</style>
+<section class="answers_area p_100" data-aos="fade-right" data-aos-duration="1000">
+  
+  <?php if(@$_GET['lang']=='en'){?>
+      <div class="container">
+    <div class="main_title">
+    <h5>Have questions? Find answers!</h5>
+    <h2>Frequently Asked Questions</h2>
+
+    <i class="fas fa-search" id="faq_searchbar_icon" style="position: relative;top: 45px;left: 97%" data-aos="fade-down" data-aos-duration="1000"></i>
+
+    <input type="text" name="faq_searchbar" id="faq_searchbar" class="form-control faq_searchbar" placeholder="Search" style="margin-top: 10px;border:none;border-bottom: 2px solid #58547e;background-color: transparent;" data-aos="fade-down" data-aos-duration="1000" onkeyup="faq_section()" onfocusin="hide_placeholder_searchbar_faq()" onfocusout="show_placeholder_searchbar_faq()">
+    </div>
+
+
+    <div class="row answer_inner faq_section" id="faq_section"></div>
+    </div>
+  <?php }else{?>
+    <div class="container">
+<div class="main_title">
+<h5 class="notranslate">প্রশ্ন আছে? উত্তর খুঁজুন!</h5>
+<h2 class="notranslate">সচরাচর জিজ্ঞাসা</h2>
+
+<i class="fas fa-search" id="faq_searchbar_icon" style="position: relative;top: 45px;left: 97%" data-aos="fade-down" data-aos-duration="1000"></i>
+
+<input type="text" name="faq_searchbar" id="faq_searchbar" class="form-control faq_searchbar" placeholder="অনুসন্ধান করুন" style="margin-top: 10px;border:none;border-bottom: 2px solid #58547e;background-color: transparent;" data-aos="fade-down" data-aos-duration="1000" onkeyup="faq_section()" onfocusin="hide_placeholder_searchbar_faq()" onfocusout="show_placeholder_searchbar_faq()">
+</div>
+
+
+
+<div class="row answer_inner faq_section" id="faq_section"></div>
+</div>
+  <?php }?>
+</section>
 
 
 <?php include 'footer.php';?>
@@ -902,6 +980,7 @@ function faq_section(){
 	
 	var faq_section = 'faq_section';
 	var lang = lastSegment;
+  var faq_searchbar = $('#faq_searchbar').val();
 
 	$.ajax({
 
@@ -910,7 +989,8 @@ function faq_section(){
 		data: {
 
 			faq_section: faq_section,
-			lang: lang
+			lang: lang,
+      faq_searchbar
 		},
 
 		success: function(data){
@@ -1066,6 +1146,40 @@ function fbChatPlugin(){
 	});
 
 }
+
+if (screen.width<=460) {
+    if(lastSegment=='en'){
+    $('#faq_searchbar').attr('placeholder','🔍 Search');
+  }else{
+    $('#faq_searchbar').attr('placeholder','🔍 অনুসন্ধান করুন');
+  }
+
+  }
+
+  function hide_placeholder_searchbar_faq(){
+
+    $('#faq_searchbar').attr('placeholder','');
+  }
+
+  function show_placeholder_searchbar_faq(){
+
+    if(screen.width<=460){
+    if(lastSegment=='en'){
+
+    $('#faq_searchbar').attr('placeholder','🔍 Search');
+  }else{
+    $('#faq_searchbar').attr('placeholder','🔍 অনুসন্ধান করুন');
+  }
+    }else{
+
+      if(lastSegment=='en'){
+
+    $('#faq_searchbar').attr('placeholder','Search');
+  }else{
+    $('#faq_searchbar').attr('placeholder','অনুসন্ধান করুন');
+  }
+    }
+  }
 
 
 </script>

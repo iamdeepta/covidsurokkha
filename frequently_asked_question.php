@@ -6,19 +6,22 @@ if(isset($_POST['faq_section'])){
 
 	$lastSegment = $_POST['lang'];
 
+	$faq_searchbar = $_POST['faq_searchbar'];
+
+if($faq_searchbar==''){
 $faq_cat_query = mysqli_query($dbc, "SELECT * from tbl_faq where faq_status=0 group by faq_category_en order by faq_id asc");
 $faq_des_query = mysqli_query($dbc, "SELECT * from tbl_faq where faq_status=0 order by faq_id asc");
+}else{
+
+	$faq_cat_query = mysqli_query($dbc, "SELECT * from tbl_faq where faq_status=0 and faq_title_en LIKE '%$faq_searchbar%' group by faq_category_en order by faq_id asc");
+$faq_des_query = mysqli_query($dbc, "SELECT * from tbl_faq where faq_status=0 and faq_title_en LIKE '%$faq_searchbar%' order by faq_id asc");
+}
 
 $output = '';
 
 if($lastSegment=='en'){
 
-	$output .= '<div class="container">
-<div class="main_title">
-<h5>Have questions? Find answers!</h5>
-<h2>Frequently Asked Questions</h2>
-</div>
-<div class="row answer_inner">
+	$output .= '
 <div class="col-lg-4">
 <div class="question_list">
 <div class="accordion" id="accordionExample">';
@@ -52,7 +55,12 @@ $output .= '<div id="collapse'.$count_faq_cat.'" class="collapse show" aria-labe
 }
 	
 	$category = $results['faq_category_en'];
+	if($faq_searchbar==''){
 	$faq_title_query = mysqli_query($dbc, "SELECT * from tbl_faq where faq_status=0 and faq_category_en='$category' order by faq_id asc");
+	}else{
+
+		$faq_title_query = mysqli_query($dbc, "SELECT * from tbl_faq where faq_status=0 and faq_category_en='$category' and faq_title_en LIKE '%$faq_searchbar%' order by faq_id asc");
+	}
 
 $output .= '<div class="card-body">
 <ul class="nav nav-tabs" id="myTab'.$count_faq_cat.'" role="tablist">';
@@ -63,9 +71,9 @@ $output .= '<div class="card-body">
 	 	
 $output .= '<li class="nav-item">';
 	if($count_faq_title==1 && $count_faq_cat==1){
-$output .= '<a class="nav-link active notranslate" id="home-tab'.$results1['faq_id'].'" data-toggle="tab" href="#home'.$results1['faq_id'].'" role="tab" aria-controls="home" aria-selected="true" onclick="myTabContent()">'.$results1['faq_title_en'].'</a>';
+$output .= '<a class="nav-link active notranslate" id="home-tab'.$results1['faq_id'].'" data-toggle="tab" href="#home'.$results1['faq_id'].'" role="tab" aria-controls="home" aria-selected="true" onclick="myTabContent('.$results1['faq_id'].')">'.$results1['faq_title_en'].'</a>';
  }else{
-	$output .= '<a class="nav-link notranslate" id="home-tab'.$results1['faq_id'].'" data-toggle="tab" href="#home'.$results1['faq_id'].'" role="tab" aria-controls="home" aria-selected="true" onclick="myTabContent()">'.$results1['faq_title_en'].'</a>';
+	$output .= '<a class="nav-link notranslate" id="home-tab'.$results1['faq_id'].'" data-toggle="tab" href="#home'.$results1['faq_id'].'" role="tab" aria-controls="home" aria-selected="true" onclick="myTabContent('.$results1['faq_id'].')">'.$results1['faq_title_en'].'</a>';
  }
 $output .= '</li>';
 
@@ -103,17 +111,11 @@ $output .= '<div class="tab-pane fade" id="home'.$results2['faq_id'].'" role="ta
 
 $output .= '</div>
 </div>
-</div>
-</div>';
+';
 
 }else{
 
-	$output .= '<div class="container">
-<div class="main_title">
-<h5 class="notranslate">প্রশ্ন আছে? উত্তর খুঁজুন!</h5>
-<h2 class="notranslate">সচরাচর জিজ্ঞাসা</h2>
-</div>
-<div class="row answer_inner">
+	$output .= '
 <div class="col-lg-4">
 <div class="question_list">
 <div class="accordion" id="accordionExample">';
@@ -147,7 +149,12 @@ $output .= '<div id="collapse'.$count_faq_cat.'" class="collapse show" aria-labe
 }
 	
 	$category = $results['faq_category_en'];
+	if($faq_searchbar==''){
 	$faq_title_query = mysqli_query($dbc, "SELECT * from tbl_faq where faq_status=0 and faq_category_en='$category' order by faq_id asc");
+	}else{
+
+		$faq_title_query = mysqli_query($dbc, "SELECT * from tbl_faq where faq_status=0 and faq_category_en='$category' and faq_title_en LIKE '%$faq_searchbar%' order by faq_id asc");
+	}
 
 $output .= '<div class="card-body">
 <ul class="nav nav-tabs" id="myTab'.$count_faq_cat.'" role="tablist">';
@@ -158,9 +165,9 @@ $output .= '<div class="card-body">
 	 	
 $output .= '<li class="nav-item">';
 	if($count_faq_title==1 && $count_faq_cat==1){
-$output .= '<a class="nav-link active notranslate" id="home-tab'.$results1['faq_id'].'" data-toggle="tab" href="#home'.$results1['faq_id'].'" role="tab" aria-controls="home" aria-selected="true" onclick="myTabContent()">'.$results1['faq_title_bn'].'</a>';
+$output .= '<a class="nav-link active notranslate" id="home-tab'.$results1['faq_id'].'" data-toggle="tab" href="#home'.$results1['faq_id'].'" role="tab" aria-controls="home" aria-selected="true" onclick="myTabContent('.$results1['faq_id'].')">'.$results1['faq_title_bn'].'</a>';
  }else{
-	$output .= '<a class="nav-link notranslate" id="home-tab'.$results1['faq_id'].'" data-toggle="tab" href="#home'.$results1['faq_id'].'" role="tab" aria-controls="home" aria-selected="true" onclick="myTabContent()">'.$results1['faq_title_bn'].'</a>';
+	$output .= '<a class="nav-link notranslate" id="home-tab'.$results1['faq_id'].'" data-toggle="tab" href="#home'.$results1['faq_id'].'" role="tab" aria-controls="home" aria-selected="true" onclick="myTabContent('.$results1['faq_id'].')">'.$results1['faq_title_bn'].'</a>';
  }
 $output .= '</li>';
 
@@ -198,8 +205,7 @@ $output .= '<div class="tab-pane fade" id="home'.$results2['faq_id'].'" role="ta
 
 $output .= '</div>
 </div>
-</div>
-</div>';
+';
 }
 
 
@@ -214,7 +220,7 @@ echo $output;
 
 	if(screen.width<=460){
 	
-	function myTabContent(){
+	function myTabContent(id){
 
 		$('html').animate({
         scrollTop: $('#accordionExample').offset().top
@@ -234,6 +240,21 @@ echo $output;
 	}
 
 	
+
+}else{
+
+function myTabContent(id){
+
+		$('html').animate({
+        //scrollTop: $('#accordionExample').offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = '#home'+id;
+      });
+
+		
+	}
 
 }
 </script>

@@ -211,7 +211,7 @@ if($id!=''){
 
 
     <li class="master_searchbar_li" id="master_searchbar_li" style="margin-top: 30px">
-	<i id="master_searchbar_icon" class="fas fa-search" style="font-size: 18px;cursor: pointer;" onclick="master_searchbar()"></i>
+	<i id="master_searchbar_icon" class="fas fa-search" style="font-size: 18px;cursor: pointer;color: #01cfbe" onclick="master_searchbar()"></i>
 	</li>
 
 
@@ -250,7 +250,7 @@ if($id!=''){
 <ul class="nav navbar-nav navbar-right" id="mbl_lang" style="display: none;">
 
 <li class="master_searchbar_li_mbl" id="master_searchbar_li_mbl" style="margin-top: 0px;margin-left: 0px;padding-right: 52px">
-	<i id="master_searchbar_icon_mbl" class="fas fa-search" style="font-size: 17px;cursor: pointer;padding-top: 3px" onclick="master_searchbar()"></i>
+	<i id="master_searchbar_icon_mbl" class="fas fa-search" style="font-size: 17px;cursor: pointer;padding-top: 3px;color: #01cfbe" onclick="master_searchbar()"></i>
 	</li>
 
 <li class="checker_btn" style="margin-left: -40px;margin-top:-30px">

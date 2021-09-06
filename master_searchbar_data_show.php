@@ -22,12 +22,27 @@ if (isset($_POST['master_searchbar_data_show'])) {
 	$ms_count=0;
   while($ms_query && $result=mysqli_fetch_array($ms_query, MYSQLI_ASSOC)){
         $ms_count++;
-        //$blogs_count_delay = $blogs_count*100;
+        $ms_count_delay = $ms_count*500;
+
+        $output .= '<style type="text/css">
+        .inactive_master_searchbar_content_card'.$ms_count.'{
+
+		opacity: 0;
+		transform: translateX(1500px);
+		transition: '.$ms_count_delay.'ms;
+	}
+
+	.active_master_searchbar_content_card'.$ms_count.'{
+
+		opacity: 1;
+		transform: translateX(0px);
+	}
+        </style>';
 
 	if ($lastSegment=='en') {
 		
 		$output .= '<a href="'.$result['master_url'].'">
-		<div class="card" style="width: 75vw;background-color: #58547e;border-radius: 15px;margin-top: 10px" onclick="close_master_searchbar()">
+		<div class="card master_searchbar_content_card active_master_searchbar_content_card" id="master_searchbar_content_card'.$ms_count.'" style="width: 75vw;background-color: #58547e;border-radius: 15px;margin-top: 10px" onclick="close_master_searchbar()">
 			<div class="card-body" style="line-height: 10px">
 				<h4 id="master_searchbar_content_title" style="color: white;font-size: 1.5rem">'.$result['master_title_en'].'</h4>
 				<p id="master_searchbar_content_text" style="color: white;font-size: 0.9rem;line-height:22px">'.mb_strimwidth($result['master_description_en'],0,200).'</p>
@@ -37,7 +52,7 @@ if (isset($_POST['master_searchbar_data_show'])) {
 	}else{
 
 		$output .= '<a href="'.$result['master_url'].'">
-		<div class="card" style="width: 75vw;background-color: #58547e;border-radius: 15px;margin-top: 10px" onclick="close_master_searchbar()">
+		<div class="card master_searchbar_content_card active_master_searchbar_content_card" id="master_searchbar_content_card'.$ms_count.'" style="width: 75vw;background-color: #58547e;border-radius: 15px;margin-top: 10px" onclick="close_master_searchbar()">
 			<div class="card-body" style="line-height: 10px">
 				<h4 id="master_searchbar_content_title" style="color: white;font-size: 1.5rem">'.$result['master_title_bn'].'</h4>
 				<p id="master_searchbar_content_text" style="color: white;font-size: 0.9rem;line-height:22px">'.mb_strimwidth($result['master_description_bn'],0,200).'</p>
@@ -52,6 +67,7 @@ if (isset($_POST['master_searchbar_data_show'])) {
 }
 
 ?>
+
 
 
 <!-- <script type="text/javascript">

@@ -713,16 +713,20 @@ Track</a>
 		//hospital_section();
     hospital_section();
     rating_review();
+    indexSection7();
+    faq_section();
+    blogs_home_section();
+    check_now_section();
 
 		$(window).one('scroll',function(){
 
 
-			check_now_section();
+			//check_now_section();
 
-			indexSection7();
-			faq_section();
+			//indexSection7();
+			//faq_section();
 
-			blogs_home_section();
+			//blogs_home_section();
 
 			//indexSection3();
 

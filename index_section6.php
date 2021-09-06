@@ -1,4 +1,4 @@
-<section class="data_table_area ambulance_section" id="hospital_section" style="background-color: #f5f5f9;margin-top: 60px;" data-aos="zoom-in" data-aos-duration="1000">
+<section class="data_table_area ambulance_section" id="ambulance_section" style="background-color: #f5f5f9;margin-top: 60px;" data-aos="zoom-in" data-aos-duration="1000">
 <div class="container">
 <div class="main_title text-center">
 	<?php if(@$_GET['lang']=='en'){?>

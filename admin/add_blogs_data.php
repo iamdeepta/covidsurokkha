@@ -187,6 +187,22 @@ if(isset($_POST['blogs_title_en']) || isset($_POST['blogs_title_bn']) || isset($
             
 
         $insert_q = mysqli_query($dbc, $query);
+
+
+        $query2 = mysqli_query($dbc, "SELECT * from tbl_blogs order by blogs_id desc limit 1");
+    
+    
+    while($query2 && $result2=mysqli_fetch_array($query2, MYSQLI_ASSOC)){
+
+        $master_unique_id = 'blogs_id'.$result2['blogs_id'];
+        $blogs_unique_id = $result2['blogs_id'];
+    }
+
+    $master_url = 'https://covidsurokkha.com/blogs-detail.php?id='.$blogs_unique_id;
+
+
+            $query1 = mysqli_query($dbc, "INSERT INTO tbl_master_search (master_title_en, master_title_bn, master_description_en, master_description_bn, master_url, master_unique_id) VALUES('".mysql_safe(trim($_POST['blogs_title_en']))."','".mysql_safe(trim($_POST['blogs_title_bn']))."','".mysql_safe(trim($_POST['blogs_description1_en']))."','".mysql_safe(trim($_POST['blogs_description1_bn']))."','".mysql_safe(trim($master_url))."','".mysql_safe(trim($master_unique_id))."')");
+
              
             if($insert_q){ 
                 $response['status'] = 1; 

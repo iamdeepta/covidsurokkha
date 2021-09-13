@@ -169,12 +169,12 @@ var lastSegment = parts.pop() || parts.pop();
 
       if(lastSegment=='en'){
 
-        $("#total_Deaths_bd").html(230);
-        $("#new_Cases_bd").html(11874);
+        $("#total_Deaths_bd").html(38);
+        $("#new_Cases_bd").html(2325);
       }else{
 
-        $("#total_Deaths_bd").html(replaceNumbers(JSON.stringify(230)));
-        $("#new_Cases_bd").html(replaceNumbers(JSON.stringify(11874)));
+        $("#total_Deaths_bd").html(replaceNumbers(JSON.stringify(38)));
+        $("#new_Cases_bd").html(replaceNumbers(JSON.stringify(2325)));
       }
 
     }

@@ -788,23 +788,23 @@ Track</a>
 		$('.map_div').addClass('active_map_div');
 		$('.division_card').addClass('active_division_card');
 
-		//hospital_section();
-    hospital_section();
+		
+    //hospital_section();
     rating_review();
     indexSection7();
     faq_section();
-    blogs_home_section();
+    //blogs_home_section();
     check_now_section();
 
 		$(window).one('scroll',function(){
 
-
+      hospital_section();
 			//check_now_section();
 
 			//indexSection7();
 			//faq_section();
 
-			//blogs_home_section();
+			blogs_home_section();
 
 			//indexSection3();
 

@@ -1,6 +1,6 @@
 <script src="assets/js/jquery-3.4.1.min.js"></script>
 <!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
-<script defer src="assets/js/popper.min.js"></script>
+<!-- <script defer src="assets/js/popper.min.js"></script> -->
 <script defer src="assets/js/bootstrap.min.js"></script>
 <!-- <script src="assets/vendors/corona-live/dashboard.js"></script>
 <script src="assets/vendors/isotop/imagesloaded.pkgd.min.js"></script>

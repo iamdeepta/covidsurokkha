@@ -46,7 +46,7 @@ if(@$_GET['lang']=='en'){
 </p>
 </div>
 <div class="row tracker_inner" id="deaths_and_cases" style="margin-top: 35px;">
-<div id="total_cases_div" class="col-lg-3 col-6 wow fadeIn" data-wow-delay="300">
+<div id="total_cases_div" class="col-lg-3 col-6">
 <!-- <div class="media">
 <div class="d-flex">
 <img src="assets/images/icon/corona-red-1.png" alt="" style="animation: rotate 3s linear 1s infinite;"/>
@@ -58,7 +58,7 @@ if(@$_GET['lang']=='en'){
 </div> -->
 </div>
 
-<div id="new_cases_div" class="col-lg-3 col-6 wow fadeIn new_cases_div" data-wow-delay="400" style="margin-left: 50px;" data-aos="fade-right" data-aos-duration="500">
+<div id="new_cases_div" class="col-lg-3 col-6 new_cases_div" style="margin-left: 50px;">
 <div class="media">
 <div class="d-flex">
 <img src="assets/images/icon/corona-green-1.webp" alt="covidsurokkha" style="animation: rotate 3s linear 1s infinite;"/>
@@ -79,7 +79,7 @@ if(@$_GET['lang']=='en'){
 </div>
 
 
-<div id="new_deaths_div" class="col-lg-3 col-6 wow fadeIn new_deaths_div" data-wow-delay="600" data-aos="fade-left" data-aos-duration="500">
+<div id="new_deaths_div" class="col-lg-3 col-6 new_deaths_div">
 <div class="media">
 <div class="d-flex">
 <img src="assets/images/icon/corona-red-1.webp" alt="covidsurokkha" style="animation: rotate 3s linear 1s infinite;"/>

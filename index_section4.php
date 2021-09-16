@@ -31,7 +31,7 @@ to do.
 </div>
 </div>
 <div class="right" id="check_now_button">
-<a class="icon_btn wow fadeInRight" data-wow-delay="400ms" href="symptom-checker.php?lang=en">
+<a class="icon_btn" href="symptom-checker.php?lang=en">
 		<span>Check now</span>
 		<i class="linearicons-arrow-right"></i></a>
  </div>
@@ -61,7 +61,7 @@ to do.
 </div>
 <div class="right" id="check_now_button">
 
-<a class="icon_btn wow fadeInRight" data-wow-delay="400ms" href="symptom-checker.php?lang=bn">
+<a class="icon_btn" href="symptom-checker.php?lang=bn">
 	
 		<span class="notranslate">'.BanglaConverter::en2bn("Check now").'</span>
 	
@@ -79,3 +79,7 @@ to do.
 
 
 ?>
+
+
+
+<!-- <a class="icon_btn wow fadeInRight" data-wow-delay="400ms" href="symptom-checker.php?lang=bn"> -->

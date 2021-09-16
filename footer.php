@@ -104,9 +104,9 @@
 </p>
 
 <?php if(@$_GET['lang']=='en'){?>
-<p style="margin-top: -20px">Visit our facebook page</p>
+<p style="margin-top: -20px">Visit our facebook and linkedin page</p>
 <?php }else{?>
-	<p style="margin-top: -20px">আমাদের ফেসবুক পেইজ ভিজিট করুন</p>
+	<p style="margin-top: -20px">আমাদের ফেসবুক এবং লিঙ্কডিন পেইজ ভিজিট করুন</p>
 <?php }?>
 
 <div class="media" style="margin-top: -20px">
@@ -121,6 +121,16 @@
 
 <?php }else{?>
 	<h6 class="notranslate" style="margin-left: 0px;font-size: 15px;color: #9491b0;"><span><i class="fab fa-facebook-square fb_icon" style="margin-top: 0px;color: #58547e;margin-right: 3px"></i></span>ফেসবুক: <span><span class="__cf_email__ notranslate" data-cfemail="f69e9fb693869f92939b9f95d8998491" style="color: #01cfbe;">কোভিডসুরক্ষা</span></span></h6>
+	
+<?php }?>
+</a>
+
+<a href="https://www.linkedin.com/company/covid-surokkha/about/" style="text-decoration: none;">
+	<?php if(@$_GET['lang']=='en'){?>
+<h6 id="fb_text_en" style="margin-left: 0px;font-size: 15px;color: #9491b0;"><span><i class="fab fa-linkedin fb_icon" style="margin-top: 0px;color: #58547e;margin-right: 3px"></i></span>LinkedIn: <span><span class="__cf_email__ notranslate" data-cfemail="f69e9fb693869f92939b9f95d8998491" style="color: #01cfbe;">covidsurokkha</span></span></h6>
+
+<?php }else{?>
+	<h6 class="notranslate" style="margin-left: 0px;font-size: 15px;color: #9491b0;"><span><i class="fab fa-linkedin fb_icon" style="margin-top: 0px;color: #58547e;margin-right: 3px"></i></span>লিঙ্কডিন: <span><span class="__cf_email__ notranslate" data-cfemail="f69e9fb693869f92939b9f95d8998491" style="color: #01cfbe;">কোভিডসুরক্ষা</span></span></h6>
 	
 <?php }?>
 </a>

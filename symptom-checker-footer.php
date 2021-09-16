@@ -101,7 +101,7 @@ $output .= '<div class="footer_widgets_area pad_top" style="background-color: #e
 
 </p>
 
-<p style="margin-top: -20px">Visit our facebook page</p>
+<p style="margin-top: -20px">Visit our facebook and linkedin page</p>
 
 <div class="media" style="margin-top: -20px">
 <div class="d-flex">
@@ -112,6 +112,11 @@ $output .= '<div class="footer_widgets_area pad_top" style="background-color: #e
 	
 <h6 id="fb_text_en" style="margin-left: 5px;font-size: 15px;color: #9491b0;"><span><i class="fab fa-facebook-square fb_icon" style="margin-top: 0px;color: #58547e;margin-right: 3px"></i></span>Facebook: <span><span class="__cf_email__ notranslate" data-cfemail="f69e9fb693869f92939b9f95d8998491" style="color: #01cfbe;">covidsurokkha</span></span></h6>
 </a>
+<a href="https://www.linkedin.com/company/covid-surokkha/about/" style="text-decoration: none;">
+	
+<h6 id="fb_text_en" style="margin-left: 5px;font-size: 15px;color: #9491b0;"><span><i class="fab fa-linkedin fb_icon" style="margin-top: 0px;color: #58547e;margin-right: 3px"></i></span>LinkedIn: <span><span class="__cf_email__ notranslate" data-cfemail="f69e9fb693869f92939b9f95d8998491" style="color: #01cfbe;">covidsurokkha</span></span></h6>
+</a>
+
 <button type="button" name="btn_rate_us" class="btn btn_rate_us" style="color: white;background-color: #01cfbe;border-radius: 6px;font-size: 12px;font-weight: bold;width: 40%;margin-top: 5px" onclick="btn_rate_us()">Rate Us <i class="fas fa-star footer-star" style="font-size: 14px;margin-left: 2px"></i></button>
 </div>
 </div>
@@ -164,7 +169,7 @@ $output .= '<div id="footer_right_side_div_en" class="" style="padding-left: 28%
 
 </p>
 
-<p style="margin-top: -20px">আমাদের ফেসবুক পেইজ ভিজিট করুন</p>
+<p style="margin-top: -20px">আমাদের ফেসবুক এবং লিঙ্কডিন পেইজ ভিজিট করুন</p>
 
 <div class="media" style="margin-top: -20px">
 <div class="d-flex">
@@ -175,6 +180,11 @@ $output .= '<div id="footer_right_side_div_en" class="" style="padding-left: 28%
 	<h6 class="notranslate" style="margin-left: 5px;font-size: 15px;color: #9491b0;"><span><i class="fab fa-facebook-square fb_icon" style="margin-top: 0px;color: #58547e;margin-right: 3px"></i></span>ফেসবুক: <span><span class="__cf_email__ notranslate" data-cfemail="f69e9fb693869f92939b9f95d8998491" style="color: #01cfbe;">কোভিডসুরক্ষা</span></span></h6>
 
 </a>
+<a href="https://www.linkedin.com/company/covid-surokkha/about/" style="text-decoration: none;">
+	<h6 class="notranslate" style="margin-left: 5px;font-size: 15px;color: #9491b0;"><span><i class="fab fa-linkedin fb_icon" style="margin-top: 0px;color: #58547e;margin-right: 3px"></i></span>লিঙ্কডিন: <span><span class="__cf_email__ notranslate" data-cfemail="f69e9fb693869f92939b9f95d8998491" style="color: #01cfbe;">কোভিডসুরক্ষা</span></span></h6>
+
+</a>
+
 <button type="button" name="btn_rate_us" class="btn btn_rate_us" style="color: white;background-color: #01cfbe;border-radius: 6px;font-size: 12px;font-weight: bold;width: 40%;margin-top: 5px" onclick="btn_rate_us()">মতামত দিন <i class="fas fa-star footer-star" style="font-size: 14px;margin-left: 2px"></i></button>
 </div>
 </div>

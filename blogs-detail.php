@@ -55,11 +55,11 @@ require('admin/db.inc.php');
 <meta name="author" content="covidsurokkha">
 <meta property="og:description" content="<?=$result['blogs_description1_en']?>">
 <meta property="og:image" content="assets/images/covidsurokkha.png" />
-<meta property="og:url" content="https://covidsurokkha.com" />
+<meta property="og:url" content="https://covidsurokkha.com/blogs-detail.php" />
 <meta property="og:title" content="covidsurokkha | <?=$result['blogs_title_en']?>" />
 <meta property="twitter:description" content="<?=$result['blogs_description1_en']?>">
 <meta property="twitter:image" content="assets/images/covidsurokkha.png" />
-<meta property="twitter:url" content="https://covidsurokkha.com" />
+<meta property="twitter:url" content="https://covidsurokkha.com/blogs-detail.php" />
 <meta property="twitter:title" content="covidsurokkha | <?=$result['blogs_title_en']?>" />
 <meta name="google-site-verification" content="E2zxAXI-DAfIdeJU5hy1trrKCWqQdqTfcaPSf9NTpVU" />
 

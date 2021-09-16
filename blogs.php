@@ -30,11 +30,11 @@ require('admin/db.inc.php');
 <meta name="author" content="covidsurokkha">
 <meta property="og:description" content="Read COVID related blogs from covidsurokkha blog section. Check out also for latest blogs and get updated.">
 <meta property="og:image" content="assets/images/covidsurokkha.png" />
-<meta property="og:url" content="https://covidsurokkha.com" />
+<meta property="og:url" content="https://covidsurokkha.com/blogs.php" />
 <meta property="og:title" content="covidsurokkha | COVID related blogs" />
 <meta property="twitter:description" content="Read COVID related blogs from covidsurokkha blog section. Check out also for latest blogs and get updated.">
 <meta property="twitter:image" content="assets/images/covidsurokkha.png" />
-<meta property="twitter:url" content="https://covidsurokkha.com" />
+<meta property="twitter:url" content="https://covidsurokkha.com/blogs.php" />
 <meta property="twitter:title" content="covidsurokkha | COVID related blogs" />
 <meta name="google-site-verification" content="E2zxAXI-DAfIdeJU5hy1trrKCWqQdqTfcaPSf9NTpVU" />
 

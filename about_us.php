@@ -30,11 +30,11 @@ require('admin/db.inc.php');
 <meta name="author" content="covidsurokkha">
 <meta property="og:description" content="The idea for covidsurokkha started when the Indian variant was first discovered in India back in March 2021. Since then it has been a constant journey of developing and improving the platform everyday from designing to building out the whole system from scratch. To this day, we are still improving the platform and adding new features and most important of all keeping it 100% free for all.">
 <meta property="og:image" content="assets/images/covidsurokkha.png" />
-<meta property="og:url" content="https://covidsurokkha.com" />
+<meta property="og:url" content="https://covidsurokkha.com/about_us.php" />
 <meta property="og:title" content="covidsurokkha | About Us" />
 <meta property="twitter:description" content="The idea for covidsurokkha started when the Indian variant was first discovered in India back in March 2021. Since then it has been a constant journey of developing and improving the platform everyday from designing to building out the whole system from scratch. To this day, we are still improving the platform and adding new features and most important of all keeping it 100% free for all.">
 <meta property="twitter:image" content="assets/images/covidsurokkha.png" />
-<meta property="twitter:url" content="https://covidsurokkha.com" />
+<meta property="twitter:url" content="https://covidsurokkha.com/about_us.php" />
 <meta property="twitter:title" content="covidsurokkha | About Us" />
 <meta name="google-site-verification" content="E2zxAXI-DAfIdeJU5hy1trrKCWqQdqTfcaPSf9NTpVU" />
 

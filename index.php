@@ -34,11 +34,11 @@ require('admin/db.inc.php');
 <meta name="description" content="covidsurokkha. Get the latest updates on Covid 19 situation in Bangladesh. Check Covid hospital ICU beds availability. Call now for an ambulance.">
 <meta name="keywords" content="covid surokkha, covid surokkha, Covidsurokkha, covid, surokkha, surokkha bd, surokkha app bangladesh, surokkha app bd, covid cases, covid deaths, hospital beds availability, icu beds, general beds, ambulance service, COVID-19, covid centre, covid hospital bed availability, total icu beds in bangladesh, covid19health, covid bed status, surokkha covid, covid hospital bed list, covid hospital bed near me, max hospital covid bed availability, covid ambulance number, covid ambulance near me, covid and ambulance, covid ambulance contact number, covid ambulance cost, ambulance for covid patient, covid ambulance helpline, covid test centres near me, covid test centres in dhaka, covid test centres around me, are the covid test centres open, is there a covid 19 testing centre near me, covid govt test centres near me, government approved covid test centres near me, government approved covid test centres in bangladesh, government covid test centres in dhaka, covid private test centres near me, government approved private covid test centres, coronavirus private test centre near me, surokkha covid bd, covid-19 surokkha.gov.bd, surokkha for covid test, surokkha app for covid 19 in bd, covid surokkha kit, surokkha covid report, covid symptom checker, covid symptom checker app, covid 19 symptom checker, symptoms check for covid, covid death in bangladesh, covid death today, covid death in bangladesh today, covid death bd, covid death cases in bangladesh, covid cases bangladesh, covid cases in bangladesh today, covid cases today, covid cases bangladesh today, covid cases bangladesh yesterday, covid cases bangladesh death, covid hospital icu beds, covid hospital icu bed availability, covid hospital bed capacity, test centres for international flights, what happens in icu for covid, covid ambulance location in dhaka, covid ambulance in bangladesh, covid hospital phone number, covid ambulance phone number, surokkha for covid patients, how to get covidsurokkha app, covidsurokkha.com, surokkha for people in bangldesh">
 <meta name="author" content="covidsurokkha">
-<!-- <meta property="og:description" content="check covid hospital ICU beds availability. call for ambulance from cvoidsurokkha"> -->
+<meta property="og:description" content="covidsurokkha. Get the latest updates on Covid 19 situation in Bangladesh. Check Covid hospital ICU beds availability. Call now for an ambulance.">
 <meta property="og:image" content="assets/images/covidsurokkha.png" />
 <meta property="og:url" content="https://covidsurokkha.com" />
 <meta property="og:title" content="covidsurokkha | Latest Covid 19 report in Bangladesh" />
-<!-- <meta property="twitter:description" content="check covid hospital ICU beds availability. call for ambulance from cvoidsurokkha"> -->
+<meta property="twitter:description" content="covidsurokkha. Get the latest updates on Covid 19 situation in Bangladesh. Check Covid hospital ICU beds availability. Call now for an ambulance.">
 <meta property="twitter:image" content="assets/images/covidsurokkha.png" />
 <meta property="twitter:url" content="https://covidsurokkha.com" />
 <meta property="twitter:title" content="covidsurokkha | Latest Covid 19 report in Bangladesh" />
@@ -790,7 +790,7 @@ Track</a>
 
 		
     //hospital_section();
-    rating_review();
+    //rating_review();
     indexSection7();
     faq_section();
     //blogs_home_section();
@@ -799,6 +799,7 @@ Track</a>
 		$(window).one('scroll',function(){
 
       hospital_section();
+      rating_review();
 			//check_now_section();
 
 			//indexSection7();

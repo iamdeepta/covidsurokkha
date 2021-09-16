@@ -30,11 +30,11 @@ require('admin/db.inc.php');
 <meta name="author" content="covidsurokkha">
 <meta property="og:description" content="Discover vaccine information in Bangladesh by visiting covidsurokkha. Whether you are a Bangaldeshi or an abroad traveller searching for covid - 19 vaccine information in Bangladesh, we got you covered. Help covidsurokkha protect people.">
 <meta property="og:image" content="assets/images/covidsurokkha.png" />
-<meta property="og:url" content="https://covidsurokkha.com" />
+<meta property="og:url" content="https://covidsurokkha.com/vaccine.php" />
 <meta property="og:title" content="Covid- 19 Vaccine Information In Bangladesh." />
 <meta property="twitter:description" content="Discover vaccine information in Bangladesh by visiting covidsurokkha. Whether you are a Bangaldeshi or an abroad traveller searching for covid - 19 vaccine information in Bangladesh, we got you covered. Help covidsurokkha protect people.">
 <meta property="twitter:image" content="assets/images/covidsurokkha.png" />
-<meta property="twitter:url" content="https://covidsurokkha.com" />
+<meta property="twitter:url" content="https://covidsurokkha.com/vaccine.php" />
 <meta property="twitter:title" content="Covid- 19 Vaccine Information In Bangladesh." />
 <meta name="google-site-verification" content="E2zxAXI-DAfIdeJU5hy1trrKCWqQdqTfcaPSf9NTpVU" />
 

@@ -111,18 +111,18 @@ other people.
 </div>
 <div class="col-lg-6">
 <div class="protect_img text-center apps_craft_animation">
-<img id="protect_yourself_vector" class="img-fluid wow fadeIn" data-wow-delay="500ms" src="assets/images/protect-img.png" alt="covid surokkha" />
+<img id="protect_yourself_vector" class="img-fluid wow fadeIn" data-wow-delay="500ms" src="assets/images/protect-img.webp" alt="covidsurokkha" />
 <ul class="nav">
-<li id="virus1"><img id="virus1_img" src="assets/images/icon/project-virus-1.png" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-2.png" alt="covid surokkha"></li>
-<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-3.png" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-4.png" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-5.png" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-6.png" alt="covid surokkha"></li>
-<li id="virus7"><img src="assets/images/icon/project-virus-7.png" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-8.png" alt="covid surokkha"></li>
-<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-9.png" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-10.png" alt="covid surokkha"></li>
+<li id="virus1"><img id="virus1_img" src="assets/images/icon/project-virus-1.webp" alt="covid surokkha"></li>
+<li><img src="assets/images/icon/project-virus-2.webp" alt="covid surokkha"></li>
+<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-3.webp" alt="covid surokkha"></li>
+<li><img src="assets/images/icon/project-virus-4.webp" alt="covid surokkha"></li>
+<li><img src="assets/images/icon/project-virus-5.webp" alt="covid surokkha"></li>
+<li><img src="assets/images/icon/project-virus-6.webp" alt="covid surokkha"></li>
+<li id="virus7"><img src="assets/images/icon/project-virus-7.webp" alt="covid surokkha"></li>
+<li><img src="assets/images/icon/project-virus-8.webp" alt="covid surokkha"></li>
+<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-9.webp" alt="covid surokkha"></li>
+<li><img src="assets/images/icon/project-virus-10.webp" alt="covid surokkha"></li>
 </ul>
 </div>
 </div>
@@ -219,18 +219,18 @@ other people.
 </div>
 <div class="col-lg-6">
 <div class="protect_img text-center apps_craft_animation">
-<img id="protect_yourself_vector" class="img-fluid wow fadeIn" data-wow-delay="500ms" src="assets/images/protect-img.png" alt="covid surokkha" />
+<img id="protect_yourself_vector" class="img-fluid wow fadeIn" data-wow-delay="500ms" src="assets/images/protect-img.webp" alt="covid surokkha" />
 <ul class="nav">
-<li id="virus1"><img id="virus1_img" src="assets/images/icon/project-virus-1.png" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-2.png" alt="covid surokkha"></li>
-<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-3.png" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-4.png" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-5.png" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-6.png" alt="covid surokkha"></li>
-<li id="virus7"><img src="assets/images/icon/project-virus-7.png" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-8.png" alt="covid surokkha"></li>
-<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-9.png" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-10.png" alt="covid surokkha"></li>
+<li id="virus1"><img id="virus1_img" src="assets/images/icon/project-virus-1.webp" alt="covid surokkha"></li>
+<li><img src="assets/images/icon/project-virus-2.webp" alt="covid surokkha"></li>
+<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-3.webp" alt="covid surokkha"></li>
+<li><img src="assets/images/icon/project-virus-4.webp" alt="covid surokkha"></li>
+<li><img src="assets/images/icon/project-virus-5.webp" alt="covid surokkha"></li>
+<li><img src="assets/images/icon/project-virus-6.webp" alt="covid surokkha"></li>
+<li id="virus7"><img src="assets/images/icon/project-virus-7.webp" alt="covid surokkha"></li>
+<li><img src="assets/images/icon/project-virus-8.webp" alt="covid surokkha"></li>
+<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-9.webp" alt="covid surokkha"></li>
+<li><img src="assets/images/icon/project-virus-10.webp" alt="covid surokkha"></li>
 </ul>
 </div>
 </div>

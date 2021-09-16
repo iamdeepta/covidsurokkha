@@ -99,7 +99,7 @@
 		<?php }else{?>
 			<p style="margin-top: 5px;margin-right: 10px;color: #58547e">দেখানো হয়েছে</p>
 		<?php }?>
-		<img src="assets/images/featured on/prothom-alo-logo.png" style="width: 120px;height: 30px">
+		<img src="assets/images/featured on/prothom-alo-logo.webp" style="width: 120px;height: 30px">
 	</div>
 </div></a>
 

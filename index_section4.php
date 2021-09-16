@@ -17,9 +17,9 @@ if(isset($_POST['check_now_section'])){
 <div class="left">
 <div class="media">
 <div class="d-flex">
-<img src="assets/images/check-1.png" alt="covidsurokkha" />
-<img src="assets/images/check-2.png" alt="covidsurokkha" />
-<img src="assets/images/check-3.png" alt="covidsurokkha" />
+<img src="assets/images/check-1.webp" alt="covidsurokkha" />
+<img src="assets/images/check-2.webp" alt="covidsurokkha" />
+<img src="assets/images/check-3.webp" alt="covidsurokkha" />
 </div>
 <div id="check_now_text" class="media-body">
 <h4 >Think you might be affected?</h4>
@@ -45,9 +45,9 @@ to do.
 <div class="left">
 <div class="media">
 <div class="d-flex">
-<img src="assets/images/check-1.png" alt="covidsurokkha" />
-<img src="assets/images/check-2.png" alt="covidsurokkha" />
-<img src="assets/images/check-3.png" alt="covidsurokkha" />
+<img src="assets/images/check-1.webp" alt="covidsurokkha" />
+<img src="assets/images/check-2.webp" alt="covidsurokkha" />
+<img src="assets/images/check-3.webp" alt="covidsurokkha" />
 </div>
 <div id="check_now_text" class="media-body">
 	

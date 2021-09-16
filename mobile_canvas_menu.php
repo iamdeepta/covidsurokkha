@@ -18,10 +18,10 @@
 <div id="blur_bg" style="width: 100vw;height: 1090vh;background-color: rgb(0.5,0.5,0.5,0.5);position: absolute;z-index: 999;display: none;overflow: hidden;"></div>
 <div class="mobile_canvus_menu">
 <div class="close_btn">
-<img src="assets/images/icon/close-dark.png" alt="covidsurokkha">
+<img src="assets/images/icon/close-dark.webp" alt="covidsurokkha">
 </div>
 <div class="menu_part_lux">
-	<img src="assets/images/logo.png" style="height: 22px;width: 190px;margin-top: -35px">
+	<img src="assets/images/logo.webp" style="height: 22px;width: 190px;margin-top: -35px">
 <ul class="menu_list wd_scroll">
 
 
@@ -50,10 +50,10 @@
 
 <li style="margin-top: 0px">
 	<?php if(@$_GET['lang']=='en'){?>
-	<a href="symptom-checker.php?lang=en" title="Covid Symptom Checker" style="line-height: 22px"><span style="font-size: 15px"><img src="assets/images/symptom-checker-logo.png" alt="covidsurokkha" style="width: 20px;height: 18px;margin-left: -1px" />COVID Symptom Checker</span></a>
+	<a href="symptom-checker.php?lang=en" title="Covid Symptom Checker" style="line-height: 22px"><span style="font-size: 15px"><img src="assets/images/symptom-checker-logo.webp" alt="covidsurokkha" style="width: 20px;height: 18px;margin-left: -1px" />COVID Symptom Checker</span></a>
 <?php }else{?>
 
-	<a class="notranslate" href="symptom-checker.php?lang=bn" title="Covid Symptom Checker" style="line-height: 22px"><span style="font-size: 15px;"><img src="assets/images/symptom-checker-logo.png" alt="covidsurokkha" style="width: 20px;height: 18px;margin-left: -1px" />কোভিড লক্ষণ পরীক্ষক</span></a>
+	<a class="notranslate" href="symptom-checker.php?lang=bn" title="Covid Symptom Checker" style="line-height: 22px"><span style="font-size: 15px;"><img src="assets/images/symptom-checker-logo.webp" alt="covidsurokkha" style="width: 20px;height: 18px;margin-left: -1px" />কোভিড লক্ষণ পরীক্ষক</span></a>
 
 <?php  }?>
 

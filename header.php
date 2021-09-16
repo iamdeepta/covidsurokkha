@@ -73,11 +73,11 @@ if($id!=''){
 
 
 	<?php if(@$_GET['lang']=='en'){?>
-<a class="navbar-brand" href="index.php?lang=en"><span style="font-size: 28px;font-weight:bold;color: #58547e"><img id="covidshebalogos" src="assets/images/logo.png" alt="covidsurokkha" style="width: 250px;height: 50px;object-fit: contain;"></span><!-- <img src="assets/images/logo.png" srcset="assets/images/logo-2x.png 2x" alt="" /> --><!-- <span id="covidlogo" style="font-size: 30px;font-weight: bold;color: #029e91;margin-left: -7px">covidsurokkha</span> --></a>
+<a class="navbar-brand" href="index.php?lang=en"><span style="font-size: 28px;font-weight:bold;color: #58547e"><img id="covidshebalogos" src="assets/images/logo.webp" alt="covidsurokkha" style="width: 250px;height: 50px;object-fit: contain;"></span><!-- <img src="assets/images/logo.webp" srcset="assets/images/logo-2x.webp 2x" alt="" /> --><!-- <span id="covidlogo" style="font-size: 30px;font-weight: bold;color: #029e91;margin-left: -7px">covidsurokkha</span> --></a>
 <?php }elseif(@$_GET['lang']=='bn'){?>
-	<a class="navbar-brand" href="index.php?lang=bn"><span style="font-size: 28px;font-weight:bold;color: #58547e"><img id="covidshebalogos" src="assets/images/logo.png" alt="covidsurokkha" style="width: 250px;height: 50px;object-fit: contain;"></span><!-- <img src="assets/images/logo.png" srcset="assets/images/logo-2x.png 2x" alt="" /> --><!-- <span id="covidlogo" style="font-size: 30px;font-weight: bold;color: #029e91;margin-left: -7px">covidsurokkha</span> --></a>
+	<a class="navbar-brand" href="index.php?lang=bn"><span style="font-size: 28px;font-weight:bold;color: #58547e"><img id="covidshebalogos" src="assets/images/logo.webp" alt="covidsurokkha" style="width: 250px;height: 50px;object-fit: contain;"></span><!-- <img src="assets/images/logo.webp" srcset="assets/images/logo-2x.webp 2x" alt="" /> --><!-- <span id="covidlogo" style="font-size: 30px;font-weight: bold;color: #029e91;margin-left: -7px">covidsurokkha</span> --></a>
 <?php }else{?>
-	<a class="navbar-brand" href="index.php?lang=bn"><span style="font-size: 28px;font-weight:bold;color: #58547e"><img id="covidshebalogos" src="assets/images/logo.png" alt="covidsurokkha" style="width: 250px;height: 50px;object-fit: contain;"></span><!-- <img src="assets/images/logo.png" srcset="assets/images/logo-2x.png 2x" alt="" /> --><!-- <span id="covidlogo" style="font-size: 30px;font-weight: bold;color: #029e91;margin-left: -7px">covidsurokkha</span> --></a>
+	<a class="navbar-brand" href="index.php?lang=bn"><span style="font-size: 28px;font-weight:bold;color: #58547e"><img id="covidshebalogos" src="assets/images/logo.webp" alt="covidsurokkha" style="width: 250px;height: 50px;object-fit: contain;"></span><!-- <img src="assets/images/logo.webp" srcset="assets/images/logo-2x.webp 2x" alt="" /> --><!-- <span id="covidlogo" style="font-size: 30px;font-weight: bold;color: #029e91;margin-left: -7px">covidsurokkha</span> --></a>
 <?php }?>
 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -246,7 +246,7 @@ if($id!=''){
 <ul class="nav">
 <li>
 <div class="search_btn" data-toggle="modal" data-target="">
-<!-- <img id="search_header" src="assets/images/icon/search.png" alt="" /> -->
+<!-- <img id="search_header" src="assets/images/icon/search.webp" alt="" /> -->
 <ul class="nav navbar-nav navbar-right" id="mbl_lang" style="display: none;">
 
 <li class="master_searchbar_li_mbl" id="master_searchbar_li_mbl" style="margin-top: 0px;margin-left: 0px;padding-right: 52px">
@@ -269,7 +269,7 @@ if($id!=''){
 </li>
 <li>
 <div class="menu_btn" id="header_menu_bar" style="display: none">
-<img src="assets/images/icon/burger.png" alt="covidsurokkha" />
+<img src="assets/images/icon/burger.webp" alt="covidsurokkha" />
 </div>
 </li>
 </ul>

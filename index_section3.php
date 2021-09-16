@@ -11,9 +11,9 @@ $output = '';
 
 $output .= '<div class="container">
 <ul class="nav image_list">
-<li><img src="assets/images/symptoms-user/sm-1.png" alt="covid surokkha"></li>
-<li><img src="assets/images/symptoms-user/sm-2.png" alt="covid surokkha"></li>
-<li><img src="assets/images/symptoms-user/sm-3.png" alt="covid surokkha"></li>
+<li><img src="assets/images/symptoms-user/sm-1.webp" alt="covidsurokkha"></li>
+<li><img src="assets/images/symptoms-user/sm-2.webp" alt="covidsurokkha"></li>
+<li><img src="assets/images/symptoms-user/sm-3.webp" alt="covidsurokkha"></li>
 </ul>
 <div class="main_title wow fadeInUp text-center" data-wow-delay="400ms">
 <h5>Symptoms of Covid</h5>

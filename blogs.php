@@ -23,19 +23,20 @@ require('admin/db.inc.php');
 
   gtag('config', 'G-ESJ54C44Q4');
 </script>
+<?php if($_GET['lang']=='en'){?>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="description" content="Read COVID related blogs from covidsurokkha blog section. Check out also for latest blogs and get updated.">
+<meta name="description" content="Read information and tips about coronavirus from the covid surokkha blog section. Check out also for the latest blogs and get updated.">
 <meta name="keywords" content="covid surokkha, covid surokkha, Covidsurokkha, covid, surokkha, surokkha bd, surokkha app bangladesh, surokkha app bd, covid cases, covid deaths, hospital beds availability, icu beds, general beds, ambulance service, COVID-19, covid centre, covid hospital bed availability, total icu beds in bangladesh, covid19health, covid bed status, surokkha covid, covid hospital bed list, covid hospital bed near me, max hospital covid bed availability, covid ambulance number, covid ambulance near me, covid and ambulance, covid ambulance contact number, covid ambulance cost, ambulance for covid patient, covid ambulance helpline, covid test centres near me, covid test centres in dhaka, covid test centres around me, are the covid test centres open, is there a covid 19 testing centre near me, covid govt test centres near me, government approved covid test centres near me, government approved covid test centres in bangladesh, government covid test centres in dhaka, covid private test centres near me, government approved private covid test centres, coronavirus private test centre near me, surokkha covid bd, covid-19 surokkha.gov.bd, surokkha for covid test, surokkha app for covid 19 in bd, covid surokkha kit, surokkha covid report, covid symptom checker, covid symptom checker app, covid 19 symptom checker, symptoms check for covid, covid death in bangladesh, covid death today, covid death in bangladesh today, covid death bd, covid death cases in bangladesh, covid cases bangladesh, covid cases in bangladesh today, covid cases today, covid cases bangladesh today, covid cases bangladesh yesterday, covid cases bangladesh death, covid hospital icu beds, covid hospital icu bed availability, covid hospital bed capacity, test centres for international flights, what happens in icu for covid, covid ambulance location in dhaka, covid ambulance in bangladesh, covid hospital phone number, covid ambulance phone number, surokkha for covid patients, how to get covidsurokkha app, covidsurokkha.com, surokkha for people in bangldesh">
 <meta name="author" content="covidsurokkha">
-<meta property="og:description" content="Read COVID related blogs from covidsurokkha blog section. Check out also for latest blogs and get updated.">
+<meta property="og:description" content="Read information and tips about coronavirus from the covid surokkha blog section. Check out also for the latest blogs and get updated.">
 <meta property="og:image" content="assets/images/covidsurokkha.png" />
 <meta property="og:url" content="https://covidsurokkha.com/blogs.php" />
-<meta property="og:title" content="covidsurokkha | COVID related blogs" />
-<meta property="twitter:description" content="Read COVID related blogs from covidsurokkha blog section. Check out also for latest blogs and get updated.">
+<meta property="og:title" content="Information and Tips about Coronavirus - Covid Surokkha" />
+<meta property="twitter:description" content="Read information and tips about coronavirus from the covid surokkha blog section. Check out also for the latest blogs and get updated.">
 <meta property="twitter:image" content="assets/images/covidsurokkha.png" />
 <meta property="twitter:url" content="https://covidsurokkha.com/blogs.php" />
-<meta property="twitter:title" content="covidsurokkha | COVID related blogs" />
+<meta property="twitter:title" content="Information and Tips about Coronavirus - Covid Surokkha" />
 <meta name="google-site-verification" content="E2zxAXI-DAfIdeJU5hy1trrKCWqQdqTfcaPSf9NTpVU" />
 
 <link rel="icon" href="assets/images/onlylogo.png" type="image/png" />
@@ -43,7 +44,30 @@ require('admin/db.inc.php');
 
 <link rel="canonical" href="https://covidsurokkha.com/blogs.php" />
 
-<title class="notranslate">covidsurokkha | COVID related blogs</title>
+<title class="notranslate">Information and Tips about Coronavirus - Covid Surokkha</title>
+<?php }else{?>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="করোনা ভাইরাসের বর্তমান খবর, তথ্য ও পরামর্শ রয়েছে কভিড সুরক্ষাতে। করোনা সংক্রান্ত সকল ধরনের তধ্যাদি ও সাহায্য পাবেন  এখানে।">
+<meta name="keywords" content="covid surokkha, covid surokkha, Covidsurokkha, covid, surokkha, surokkha bd, surokkha app bangladesh, surokkha app bd, covid cases, covid deaths, hospital beds availability, icu beds, general beds, ambulance service, COVID-19, covid centre, covid hospital bed availability, total icu beds in bangladesh, covid19health, covid bed status, surokkha covid, covid hospital bed list, covid hospital bed near me, max hospital covid bed availability, covid ambulance number, covid ambulance near me, covid and ambulance, covid ambulance contact number, covid ambulance cost, ambulance for covid patient, covid ambulance helpline, covid test centres near me, covid test centres in dhaka, covid test centres around me, are the covid test centres open, is there a covid 19 testing centre near me, covid govt test centres near me, government approved covid test centres near me, government approved covid test centres in bangladesh, government covid test centres in dhaka, covid private test centres near me, government approved private covid test centres, coronavirus private test centre near me, surokkha covid bd, covid-19 surokkha.gov.bd, surokkha for covid test, surokkha app for covid 19 in bd, covid surokkha kit, surokkha covid report, covid symptom checker, covid symptom checker app, covid 19 symptom checker, symptoms check for covid, covid death in bangladesh, covid death today, covid death in bangladesh today, covid death bd, covid death cases in bangladesh, covid cases bangladesh, covid cases in bangladesh today, covid cases today, covid cases bangladesh today, covid cases bangladesh yesterday, covid cases bangladesh death, covid hospital icu beds, covid hospital icu bed availability, covid hospital bed capacity, test centres for international flights, what happens in icu for covid, covid ambulance location in dhaka, covid ambulance in bangladesh, covid hospital phone number, covid ambulance phone number, surokkha for covid patients, how to get covidsurokkha app, covidsurokkha.com, surokkha for people in bangldesh">
+<meta name="author" content="covidsurokkha">
+<meta property="og:description" content="করোনা ভাইরাসের বর্তমান খবর, তথ্য ও পরামর্শ রয়েছে কভিড সুরক্ষাতে। করোনা সংক্রান্ত সকল ধরনের তধ্যাদি ও সাহায্য পাবেন  এখানে।">
+<meta property="og:image" content="assets/images/covidsurokkha.png" />
+<meta property="og:url" content="https://covidsurokkha.com/blogs.php" />
+<meta property="og:title" content="করোনা ভাইরাসের বর্তমান খবর, তথ্য ও পরামর্শ - কভিড সুরক্ষা" />
+<meta property="twitter:description" content="করোনা ভাইরাসের বর্তমান খবর, তথ্য ও পরামর্শ রয়েছে কভিড সুরক্ষাতে। করোনা সংক্রান্ত সকল ধরনের তধ্যাদি ও সাহায্য পাবেন  এখানে।">
+<meta property="twitter:image" content="assets/images/covidsurokkha.png" />
+<meta property="twitter:url" content="https://covidsurokkha.com/blogs.php" />
+<meta property="twitter:title" content="করোনা ভাইরাসের বর্তমান খবর, তথ্য ও পরামর্শ - কভিড সুরক্ষা" />
+<meta name="google-site-verification" content="E2zxAXI-DAfIdeJU5hy1trrKCWqQdqTfcaPSf9NTpVU" />
+
+<link rel="icon" href="assets/images/onlylogo.png" type="image/png" />
+<link rel="apple-touch-icon" href="assets/images/onlylogo.png"/>
+
+<link rel="canonical" href="https://covidsurokkha.com/blogs.php" />
+
+<title class="notranslate">করোনা ভাইরাসের বর্তমান খবর, তথ্য ও পরামর্শ - কভিড সুরক্ষা</title>
+<?php }?>
 
 <?php include 'blogs_css.php';?>
 
@@ -163,7 +187,11 @@ require('admin/db.inc.php');
 
 <div class="body_wrapper" id="body_wrapper">
 
-  <span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">Read COVID related blogs from covidsurokkha blog section. Check out also for latest blogs and get updated.</h1></span>
+  <?php if($_GET['lang']=='en'){?>
+  <span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">Our Blog is Organized with Information and Tips about Coronavirus</h1></span>
+<?php }else{?>
+  <span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">করোনা ভাইরাসের তথ্য ও পরামর্শ নিয়ে সাজানো হয়েছে আমাদের ব্লগ</h1></span>
+<?php }?>
 	<!-- <span style="height:200px;margin-top:-200px;display:block;visibility:hidden"><img src="assets/images/covidshebalogoreview.jpg"></span> -->
 
 <!-- <div class="preloader">

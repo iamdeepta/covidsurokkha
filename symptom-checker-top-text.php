@@ -1,3 +1,10 @@
+<style type="text/css">
+	@media screen and (max-width: 460px){
+		.not_feeling_well_text{
+			font: 700 16px/26px "Quicksand",sans-serif !important;
+		}
+	}
+</style>
 <?php 
 
 if(isset($_POST['top_text'])){
@@ -7,7 +14,7 @@ if(isset($_POST['top_text'])){
 
 if ($_POST['lastSegment1']=='en') {
 
-  $output .= '<h6>You are not feeling well?</h6>
+  $output .= '<p class="not_feeling_well_text" style="font:700 18px quicksand,sans-serif;color: #01cfbe;">You are not feeling well?</p>
 
 <h3>Coronavirus Symptom Checker</h3>
 
@@ -15,7 +22,7 @@ if ($_POST['lastSegment1']=='en') {
 
 }else{
 
-  $output .= '<h6>ভাল লাগছে না তো?</h6>
+  $output .= '<p class="not_feeling_well_text" style="font:700 18px quicksand,sans-serif;color: #01cfbe;">ভাল লাগছে না তো?</p>
 
 <h3>করোনভাইরাস লক্ষণ পরীক্ষক</h3>
 

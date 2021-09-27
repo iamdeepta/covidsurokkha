@@ -6,7 +6,7 @@ if(isset($_POST['basic_details_inside'])){
 
   if($_POST['lastSegment1']=='en'){
 
-$output .= '<h4 style="color: white">Basic Details</h4>
+$output .= '<h3 style="color: white">Basic Details</h3>
 <p id="error_msg" style="color: #f37878;display:none">Please enter your name</p>
 <div class="row">
 <div class="col-lg-6">
@@ -28,7 +28,7 @@ $output .= '<h4 style="color: white">Basic Details</h4>
 
 }else{
 
-	$output .= '<h4 style="color: white">বেসিক বিবরণ</h4>
+	$output .= '<h3 style="color: white">বেসিক বিবরণ</h3>
 <p id="error_msg" style="color: #f37878;display:none">আপনার নাম লিখুন</p>
 <div class="row">
 <div class="col-lg-6">

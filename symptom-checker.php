@@ -21,26 +21,49 @@ require('admin/db.inc.php');
 
   gtag('config', 'G-ESJ54C44Q4');
 </script>
+<?php if($_GET['lang']=='en'){?>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="description" content="Reduce your risk of getting affected by covid. Check your symptom with modern covidsurokkha symptoms checker. Input your covid symptoms right now.">
+<meta name="description" content="Check your symptoms with a modern covid surokkha symptom checker to reduce the risk of being infected by covid. Input your covid symptoms now.">
 <meta name="keywords" content="covid surokkha, covid surokkha, Covidsurokkha, covid, surokkha, surokkha bd, surokkha app bangladesh, surokkha app bd, covid cases, covid deaths, hospital beds availability, icu beds, general beds, ambulance service, COVID-19, covid centre, covid hospital bed availability, total icu beds in bangladesh, covid19health, covid bed status, surokkha covid, covid hospital bed list, covid hospital bed near me, max hospital covid bed availability, covid ambulance number, covid ambulance near me, covid and ambulance, covid ambulance contact number, covid ambulance cost, ambulance for covid patient, covid ambulance helpline, covid test centres near me, covid test centres in dhaka, covid test centres around me, are the covid test centres open, is there a covid 19 testing centre near me, covid govt test centres near me, government approved covid test centres near me, government approved covid test centres in bangladesh, government covid test centres in dhaka, covid private test centres near me, government approved private covid test centres, coronavirus private test centre near me, surokkha covid bd, covid-19 surokkha.gov.bd, surokkha for covid test, surokkha app for covid 19 in bd, covid surokkha kit, surokkha covid report, covid symptom checker, covid symptom checker app, covid 19 symptom checker, symptoms check for covid, covid death in bangladesh, covid death today, covid death in bangladesh today, covid death bd, covid death cases in bangladesh, covid cases bangladesh, covid cases in bangladesh today, covid cases today, covid cases bangladesh today, covid cases bangladesh yesterday, covid cases bangladesh death, covid hospital icu beds, covid hospital icu bed availability, covid hospital bed capacity, test centres for international flights, what happens in icu for covid, covid ambulance location in dhaka, covid ambulance in bangladesh, covid hospital phone number, covid ambulance phone number, surokkha for covid patients, how to get covidsurokkha app, covidsurokkha.com, surokkha for people in bangldesh">
 <meta name="author" content="covidsurokkha">
-<meta property="og:description" content="Reduce your risk of getting affected by covid. Check your symptom with modern covidsurokkha symptoms checker. Input your covid symptoms right now.">
+<meta property="og:description" content="Check your symptoms with a modern covid surokkha symptom checker to reduce the risk of being infected by covid. Input your covid symptoms now.">
 <meta property="og:image" content="assets/images/covidsurokkha.png" />
 <meta property="og:url" content="https://covidsurokkha.com/symptom-checker.php" />
-<meta property="og:title" content="covidsurokkha | Check your covid symptoms right now" />
-<meta property="twitter:description" content="Reduce your risk of getting affected by covid. Check your symptom with modern covidsurokkha symptoms checker. Input your covid symptoms right now.">
+<meta property="og:title" content="covidsurokkha Symptom Checker: Reduce Covid Affected Risk" />
+<meta property="twitter:description" content="Check your symptoms with a modern covid surokkha symptom checker to reduce the risk of being infected by covid. Input your covid symptoms now.">
 <meta property="twitter:image" content="assets/images/covidsurokkha.png" />
 <meta property="twitter:url" content="https://covidsurokkha.com/symptom-checker.php" />
-<meta property="twitter:title" content="covidsurokkha | Check your covid symptoms right now" />
+<meta property="twitter:title" content="covidsurokkha Symptom Checker: Reduce Covid Affected Risk" />
 <meta name="google-site-verification" content="E2zxAXI-DAfIdeJU5hy1trrKCWqQdqTfcaPSf9NTpVU" />
 
 <link rel="icon" href="assets/images/onlylogo.png" type="image/png" />
 <link rel="apple-touch-icon" href="assets/images/onlylogo.png"/>
 
 <link rel="canonical" href="https://covidsurokkha.com/symptom-checker.php" />
-<title class="notranslate">covidsurokkha | Check your covid symptoms right now</title>
+<title class="notranslate">covidsurokkha Symptom Checker: Reduce Covid Affected Risk</title>
+<?php }else{?>
+	<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="আধুনিক কোভিড সুরক্ষার লক্ষণ পরীক্ষক দিয়ে করোনাভাইরাসের লক্ষণগুলি পরীক্ষা করে করোনা সন্দেহ দূর করুন। এখনই আপনার করোনা উপসর্গগুলি প্রবেশ করান।">
+<meta name="keywords" content="covid surokkha, covid surokkha, Covidsurokkha, covid, surokkha, surokkha bd, surokkha app bangladesh, surokkha app bd, covid cases, covid deaths, hospital beds availability, icu beds, general beds, ambulance service, COVID-19, covid centre, covid hospital bed availability, total icu beds in bangladesh, covid19health, covid bed status, surokkha covid, covid hospital bed list, covid hospital bed near me, max hospital covid bed availability, covid ambulance number, covid ambulance near me, covid and ambulance, covid ambulance contact number, covid ambulance cost, ambulance for covid patient, covid ambulance helpline, covid test centres near me, covid test centres in dhaka, covid test centres around me, are the covid test centres open, is there a covid 19 testing centre near me, covid govt test centres near me, government approved covid test centres near me, government approved covid test centres in bangladesh, government covid test centres in dhaka, covid private test centres near me, government approved private covid test centres, coronavirus private test centre near me, surokkha covid bd, covid-19 surokkha.gov.bd, surokkha for covid test, surokkha app for covid 19 in bd, covid surokkha kit, surokkha covid report, covid symptom checker, covid symptom checker app, covid 19 symptom checker, symptoms check for covid, covid death in bangladesh, covid death today, covid death in bangladesh today, covid death bd, covid death cases in bangladesh, covid cases bangladesh, covid cases in bangladesh today, covid cases today, covid cases bangladesh today, covid cases bangladesh yesterday, covid cases bangladesh death, covid hospital icu beds, covid hospital icu bed availability, covid hospital bed capacity, test centres for international flights, what happens in icu for covid, covid ambulance location in dhaka, covid ambulance in bangladesh, covid hospital phone number, covid ambulance phone number, surokkha for covid patients, how to get covidsurokkha app, covidsurokkha.com, surokkha for people in bangldesh">
+<meta name="author" content="covidsurokkha">
+<meta property="og:description" content="আধুনিক কোভিড সুরক্ষার লক্ষণ পরীক্ষক দিয়ে করোনাভাইরাসের লক্ষণগুলি পরীক্ষা করে করোনা সন্দেহ দূর করুন। এখনই আপনার করোনা উপসর্গগুলি প্রবেশ করান।">
+<meta property="og:image" content="assets/images/covidsurokkha.png" />
+<meta property="og:url" content="https://covidsurokkha.com/symptom-checker.php" />
+<meta property="og:title" content="কোভিড সুরক্ষার লক্ষণ পরীক্ষকঃ করোনা সন্দেহ দূর করুন এখনই" />
+<meta property="twitter:description" content="আধুনিক কোভিড সুরক্ষার লক্ষণ পরীক্ষক দিয়ে করোনাভাইরাসের লক্ষণগুলি পরীক্ষা করে করোনা সন্দেহ দূর করুন। এখনই আপনার করোনা উপসর্গগুলি প্রবেশ করান।">
+<meta property="twitter:image" content="assets/images/covidsurokkha.png" />
+<meta property="twitter:url" content="https://covidsurokkha.com/symptom-checker.php" />
+<meta property="twitter:title" content="কোভিড সুরক্ষার লক্ষণ পরীক্ষকঃ করোনা সন্দেহ দূর করুন এখনই" />
+<meta name="google-site-verification" content="E2zxAXI-DAfIdeJU5hy1trrKCWqQdqTfcaPSf9NTpVU" />
+
+<link rel="icon" href="assets/images/onlylogo.png" type="image/png" />
+<link rel="apple-touch-icon" href="assets/images/onlylogo.png"/>
+
+<link rel="canonical" href="https://covidsurokkha.com/symptom-checker.php" />
+<title class="notranslate">কোভিড সুরক্ষার লক্ষণ পরীক্ষকঃ করোনা সন্দেহ দূর করুন এখনই</title>
+<?php }?>
 
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
@@ -356,7 +379,11 @@ input[type=checkbox]:checked:disabled + label:before {
 <body data-scroll-animation="true">
 <div class="body_wrapper" id="body_wrapper" style="background-color: #f5f5f9">
 
-	<span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">use covid symptom checker to assess your risk of getting affected by input your covid symptoms</h1></span>
+	<?php if($_GET['lang']=='en'){?>
+	<span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">Reduce Covid Affected Risk by Covid Surokkha Symptom Checker</h1><a href="https://covidsurokkha.com/">কোভিড সুরক্ষা</a></span>
+<?php }else{?>
+	<span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">কোভিড সুরক্ষার লক্ষণ পরীক্ষক এর মাধ্যমে করোনা সন্দেহ দূর করুন এখনই</h1><a href="https://covidsurokkha.com/">covid surokkha</a></span>
+<?php }?>
 
 
 <!-- <div class="preloader">
@@ -513,12 +540,12 @@ input[type=checkbox]:checked:disabled + label:before {
 <h4 id="hi_name">Our Advice</h4>
 <p id="hi_text">Please provide all the information asked above to have covid-19 result and advices. Thank you.</p>
 <?php }else{?>
-	<h4 id="hi_name">আমাদের পরামর্শ</h4>
+	<h3 id="hi_name">আমাদের পরামর্শ</h3>
 <p id="hi_text">কোভিড -১৯ ফলাফল এবং পরামর্শ জানার জন্য দয়া করে উপরের সমস্ত তথ্য সরবরাহ করুন। ধন্যবাদ।</p>
 <?php }?>
 </div>
 <div class="result_item" id="our_advice" style="display: none" data-aos="fade-left" data-aos-duration="1000">
-<h4 id="our_advice_header"></h4>
+<h3 id="our_advice_header"></h3>
 <p id="our_advice_text11"><span style="color: #26b864;"><!-- ✓ --> </span><span id="our_advice_text1"></span></p>
 <p id="our_advice_text22"><span style="color: #26b864;"><!-- ✓ --> </span><span id="our_advice_text2"></span></p>
 <p id="our_advice_text33"><span style="color: #26b864;"><!-- ✓ --> </span><span id="our_advice_text3"></span></p>

@@ -11,9 +11,9 @@ $output = '';
 
 $output .= '<div class="container">
 <ul class="nav image_list">
-<li><img src="assets/images/symptoms-user/sm-1.webp" alt="covidsurokkha"></li>
-<li><img src="assets/images/symptoms-user/sm-2.webp" alt="covidsurokkha"></li>
-<li><img src="assets/images/symptoms-user/sm-3.webp" alt="covidsurokkha"></li>
+<li><img src="assets/images/symptoms-user/sm-1.webp" alt="আজকের-করোনাভাইরাস-আপডেট-বাংলাদেশ"></li>
+<li><img src="assets/images/symptoms-user/sm-2.webp" alt="করোনার-আজকের-আপডেট"></li>
+<li><img src="assets/images/symptoms-user/sm-3.webp" alt="আজকের-করোনা-পরিস্থিতি"></li>
 </ul>
 <div class="main_title wow fadeInUp text-center" data-wow-delay="400ms">
 <h5>Symptoms of Covid</h5>
@@ -24,7 +24,7 @@ $output .= '<div class="container">
 <div class="symptoms_item">
 <div class="media">
 <div class="d-flex">
-<img id="symptoms_img" src="assets/images/symptoms-user/symptoms-1.png" alt="" />
+<img id="symptoms_img" src="assets/images/symptoms-user/symptoms-1.png" alt="আজকের-করোনার-আপডেট" />
 </div>
 <div class="media-body">
 <h4>High fever</h4>
@@ -46,7 +46,7 @@ $output .= '</p>
 <div class="symptoms_item">
 <div class="media">
 <div class="d-flex">
-<img id="symptoms_img" src="assets/images/symptoms-user/symptoms-2.png" alt="" />
+<img id="symptoms_img" src="assets/images/symptoms-user/symptoms-2.png" alt="করোনা-ভাইরাসের-বর্তমান-পরিস্থিতি" />
 </div>
 <div class="media-body">
 <h4>Sortness of Breath</h4>
@@ -67,7 +67,7 @@ if($lang=='en'){
 <div class="symptoms_item">
 <div class="media">
 <div class="d-flex">
-<img id="symptoms_img" src="assets/images/symptoms-user/symptoms-3.png" alt="" />
+<img id="symptoms_img" src="assets/images/symptoms-user/symptoms-3.png" alt="আজকের-করোনা-আপডেট" />
 </div>
 <div class="media-body">
 <h4>Dry Cough</h4>
@@ -84,7 +84,7 @@ feel in your chest.
 <div class="symptoms_item">
 <div class="media">
 <div class="d-flex">
-<img id="symptoms_img" src="assets/images/symptoms-user/symptoms-4.png" alt="" />
+<img id="symptoms_img" src="assets/images/symptoms-user/symptoms-4.png" alt="করোনা-আপডেট-আজকের" />
 </div>
 <div class="media-body">
 <h4>Headache</h4>';

@@ -6,7 +6,7 @@ if(isset($_POST['symptoms2_inside'])){
 
   if($_POST['lastSegment1']=='en'){
 
-$output .= '<h4 style="color: white">What about any of these symptoms?</h4>
+$output .= '<h3 style="color: white;font-size:1.5rem">What about any of these symptoms?</h3>
 <p id="error_msg2" style="color: #f37878;display:none">Please select atleast one</p>
 <div class="row">
 <div class="col-lg-6">
@@ -41,7 +41,7 @@ $output .= '<h4 style="color: white">What about any of these symptoms?</h4>
 
 }else{
 
-  $output .= '<h4 style="color: white">আপনি কি এই লক্ষণগুলিরও মুখোমুখি?</h4>
+  $output .= '<h3 style="color: white;font-size:1.5rem">আপনি কি এই লক্ষণগুলিরও মুখোমুখি?</h3>
 <p id="error_msg2" style="color: #f37878;display:none">কমপক্ষে একটি নির্বাচন করুন</p>
 <div class="row">
 <div class="col-lg-6">

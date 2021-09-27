@@ -8,9 +8,9 @@ $daily_death_date_query = mysqli_query($dbc, "SELECT * from tbl_daily_death_date
 <section class="symptoms_area" style="margin-top: 180px;background-color: #f5f5f9;">
 <div class="container">
 	<ul class="nav image_list" style="margin-top: -400px;">
-<li><img src="assets/images/symptoms-user/sm-1.webp" alt="covidsurokkha"></li>
-<li id="virus_big_image_li"><img id="virus_big_image" src="assets/images/symptoms-user/sm-2.webp" alt="covidsurokkha"></li>
-<li><img src="assets/images/symptoms-user/sm-3.webp" alt="covidsurokkha"></li>
+<li><img src="assets/images/symptoms-user/sm-1.webp" alt="করোনাভাইরাস-লাইভ-আপডেট"></li>
+<li id="virus_big_image_li"><img id="virus_big_image" src="assets/images/symptoms-user/sm-2.webp" alt="করোনার-সর্বশেষ-আপডেট"></li>
+<li><img src="assets/images/symptoms-user/sm-3.webp" alt="আজকের-করোনাভাইরাস-আপডেট"></li>
 </ul>
 <!-- <img class="tracker_map" src="assets/images/tracker-map-bg.png" alt="" /> -->
 <div class="tracker_text" style="margin-top: -150px;text-align: center !important;" data-aos="fade-down" data-aos-duration="500">
@@ -61,7 +61,7 @@ if(@$_GET['lang']=='en'){
 <div id="new_cases_div" class="col-lg-3 col-6 new_cases_div" style="margin-left: 50px;">
 <div class="media">
 <div class="d-flex">
-<img src="assets/images/icon/corona-green-1.webp" alt="covidsurokkha" style="animation: rotate 3s linear 1s infinite;"/>
+<img src="assets/images/icon/corona-green-1.webp" alt="করোনা-আপডেট-১" style="animation: rotate 3s linear 1s infinite;"/>
 </div>
 <div class="media-body" style="margin-left: 13px;">
 	<?php if(@$_GET['lang']=='en'){?>
@@ -82,7 +82,7 @@ if(@$_GET['lang']=='en'){
 <div id="new_deaths_div" class="col-lg-3 col-6 new_deaths_div">
 <div class="media">
 <div class="d-flex">
-<img src="assets/images/icon/corona-red-1.webp" alt="covidsurokkha" style="animation: rotate 3s linear 1s infinite;"/>
+<img src="assets/images/icon/corona-red-1.webp" alt="করোনা-আপডেট-২" style="animation: rotate 3s linear 1s infinite;"/>
 </div>
 <div class="media-body" style="margin-left: 13px;">
 	<?php if(@$_GET['lang']=='en'){?>

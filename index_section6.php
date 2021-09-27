@@ -1,15 +1,22 @@
+<style type="text/css">
+	@media screen and (max-width: 460px){
+		.ambulance_services_text{
+			font: 700 36px quicksand,sans-serif !important;
+		}
+	}
+</style>
 <section class="data_table_area ambulance_section" id="ambulance_section" style="background-color: #f5f5f9;margin-top: 60px;" data-aos="zoom-in" data-aos-duration="1000">
 <div class="container">
 <div class="main_title text-center">
 	<?php if(@$_GET['lang']=='en'){?>
-<h5 id="hospitals_nearby_text" style="font-size: 38px;">Nearby Ambulance</h5>
+<h2 id="hospitals_nearby_text" style="font-size: 38px;color: #01cfbe;font-weight: normal;">Nearby Ambulance</h2>
 <?php }else{?>
-	<h5 class="notranslate" id="hospitals_nearby_text" style="font-size: 38px;">কাছাকাছি এ্যাম্বুলেন্স</h5>
+	<h2 class="notranslate" id="hospitals_nearby_text" style="font-size: 38px;color: #01cfbe;font-weight: normal;">কাছাকাছি এ্যাম্বুলেন্স</h2>
 <?php }?>
 <?php if(@$_GET['lang']=='en'){?>
-<h2>Ambulance Services</h2>
+<h3 class="notranslate ambulance_services_text" style="font: 700 48px quicksand,sans-serif;">Ambulance Services</h3>
 <?php }else{?>
-	<h2 class="notranslate">এ্যাম্বুলেন্স সেবা</h2>
+	<h3 class="notranslate ambulance_services_text" style="font: 700 48px quicksand,sans-serif;">এ্যাম্বুলেন্স সেবা</h3>
 
 <?php }?>
 </div>

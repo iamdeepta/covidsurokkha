@@ -1,4 +1,15 @@
 <link rel="stylesheet" href="assets/vendors/animate-css/animate.css" />
+<style type="text/css">
+	@media screen and (max-width: 460px){
+		.how_to_protect_yourself_text{
+			font-size: 26px !important;
+		}
+
+		.you_need_to_do_text{
+			font: 700 18px quicksand,sans-serif !important;
+		}
+	}
+</style>
 <?php 
 
 //include 'top-cache.php';
@@ -15,8 +26,8 @@ if (isset($_POST['indexSection7'])) {
 
 		$output .= '<div class="container">
 <div class="main_title text-center">
-<h5>What you need to do</h5>
-<h2>How to protect yourself?</h2>
+<h2 style="font-size: 22px;font-weight:normal;color:#01cfbe">What you need to do</h2>
+<h3 class="how_to_protect_yourself_text" style="font-size:40px">How to protect yourself from Coronavirus?</h3>
 </div>
 <div class="row protect_inner">
 <div class="col-lg-6">
@@ -24,8 +35,8 @@ if (isset($_POST['indexSection7'])) {
 <div class="col-6">
 <div class="protect_list_item">
 <div class="protect_list_title">
-<h3>You should do</h3>
-<h6>Be sure to follow it</h6>
+<h4 class="you_need_to_do_text" style="color: #01cfbe">You should do</h4>
+<h5 style="font:400 14px quicksand,sans-serif;color:#9491b0;">Be sure to follow it</h5>
 </div>
 <ul class="nav flex-column">
 <li>
@@ -61,8 +72,8 @@ waterintake</a>
 <div class="col-6">
 <div class="protect_list_item red">
 <div class="protect_list_title">
-<h3>You should avoid</h3>
-<h6>Be sure to follow it</h6>
+<h4 class="you_need_to_do_text" style="color: #e4133f">You should avoid</h4>
+<h5 style="font:400 14px quicksand,sans-serif;color:#9491b0;">Be sure to follow it</h5>
 </div>
 <ul class="nav flex-column">
 <li>
@@ -111,18 +122,18 @@ other people.
 </div>
 <div class="col-lg-6">
 <div class="protect_img text-center apps_craft_animation">
-<img id="protect_yourself_vector" class="img-fluid wow fadeIn" data-wow-delay="500ms" src="assets/images/protect-img.webp" alt="covidsurokkha" />
+<img id="protect_yourself_vector" class="img-fluid wow fadeIn" data-wow-delay="500ms" src="assets/images/protect-img.webp" alt="how-to-protect-yourself-from-coronavirus?" />
 <ul class="nav">
-<li id="virus1"><img id="virus1_img" src="assets/images/icon/project-virus-1.webp" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-2.webp" alt="covid surokkha"></li>
-<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-3.webp" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-4.webp" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-5.webp" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-6.webp" alt="covid surokkha"></li>
-<li id="virus7"><img src="assets/images/icon/project-virus-7.webp" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-8.webp" alt="covid surokkha"></li>
-<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-9.webp" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-10.webp" alt="covid surokkha"></li>
+<li id="virus1"><img id="virus1_img" src="assets/images/icon/project-virus-1.webp" alt="corona update bangladesh"></li>
+<li><img src="assets/images/icon/project-virus-2.webp" alt="covid-19 update"></li>
+<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-3.webp" alt="coronavirus update"></li>
+<li><img src="assets/images/icon/project-virus-4.webp" alt="corona virus update"></li>
+<li><img src="assets/images/icon/project-virus-5.webp" alt="corona update bd"></li>
+<li><img src="assets/images/icon/project-virus-6.webp" alt="corona live update"></li>
+<li id="virus7"><img src="assets/images/icon/project-virus-7.webp" alt="covid 19 live update"></li>
+<li><img src="assets/images/icon/project-virus-8.webp" alt="coronavirus live update"></li>
+<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-9.webp" alt="today corona update"></li>
+<li><img src="assets/images/icon/project-virus-10.webp" alt="latest coronavirus update"></li>
 </ul>
 </div>
 </div>
@@ -133,8 +144,8 @@ other people.
 
 	$output .= '<div class="container notranslate">
 <div class="main_title text-center">
-<h5>আপনাকে যা করতে হবে</h5>
-<h2>কীভাবে নিজেকে রক্ষা করবেন?</h2>
+<h2 style="font-size: 22px;font-weight:normal;color:#01cfbe">আপনাকে যা করতে হবে</h2>
+<h3 class="how_to_protect_yourself_text" style="font-size:40px">করোনাভাইরাস থেকে কীভাবে নিজেকে রক্ষা করবেন?</h3>
 </div>
 <div class="row protect_inner">
 <div class="col-lg-6">
@@ -142,8 +153,8 @@ other people.
 <div class="col-6">
 <div class="protect_list_item">
 <div class="protect_list_title">
-<h3>আপনার যা করণীয়</h3>
-<h6>এটি অনুসরণ করতে ভুলবেন না</h6>
+<h4 class="you_need_to_do_text" style="color: #01cfbe">আপনার যা করণীয়</h4>
+<h5 style="font:400 14px quicksand,sans-serif;color:#9491b0;">এটি অনুসরণ করতে ভুলবেন না</h5>
 </div>
 <ul class="nav flex-column">
 <li>
@@ -176,8 +187,8 @@ other people.
 <div class="col-6">
 <div class="protect_list_item red">
 <div class="protect_list_title">
-<h3>যা এড়ানো উচিত</h3>
-<h6>এটি অনুসরণ করতে ভুলবেন না</h6>
+<h4 class="you_need_to_do_text" style="color: #e4133f">যা এড়ানো উচিত</h4>
+<h6 style="font:400 14px quicksand,sans-serif;color:#9491b0;">এটি অনুসরণ করতে ভুলবেন না</h6>
 </div>
 <ul class="nav flex-column">
 <li>
@@ -219,18 +230,18 @@ other people.
 </div>
 <div class="col-lg-6">
 <div class="protect_img text-center apps_craft_animation">
-<img id="protect_yourself_vector" class="img-fluid wow fadeIn" data-wow-delay="500ms" src="assets/images/protect-img.webp" alt="covid surokkha" />
+<img id="protect_yourself_vector" class="img-fluid wow fadeIn" data-wow-delay="500ms" src="assets/images/protect-img.webp" alt="করোনাভাইরাস-থেকে-কীভাবে নিজেকে রক্ষা করবেন?" />
 <ul class="nav">
-<li id="virus1"><img id="virus1_img" src="assets/images/icon/project-virus-1.webp" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-2.webp" alt="covid surokkha"></li>
-<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-3.webp" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-4.webp" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-5.webp" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-6.webp" alt="covid surokkha"></li>
-<li id="virus7"><img src="assets/images/icon/project-virus-7.webp" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-8.webp" alt="covid surokkha"></li>
-<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-9.webp" alt="covid surokkha"></li>
-<li><img src="assets/images/icon/project-virus-10.webp" alt="covid surokkha"></li>
+<li id="virus1"><img id="virus1_img" src="assets/images/icon/project-virus-1.webp" alt="করোনাভাইরাস-লাইভ-আপডেট"></li>
+<li><img src="assets/images/icon/project-virus-2.webp" alt="করোনার-সর্বশেষ-আপডেট"></li>
+<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-3.webp" alt="আজকের-করোনাভাইরাস-আপডেট"></li>
+<li><img src="assets/images/icon/project-virus-4.webp" alt="আজকের-করোনার-আপডেট"></li>
+<li><img src="assets/images/icon/project-virus-5.webp" alt="আজকের-করোনাভাইরাস-আপডেট-বাংলাদেশ"></li>
+<li><img src="assets/images/icon/project-virus-6.webp" alt="করোনার-আজকের-আপডেট"></li>
+<li id="virus7"><img src="assets/images/icon/project-virus-7.webp" alt="আজকের-করোনা-পরিস্থিতি"></li>
+<li><img src="assets/images/icon/project-virus-8.webp" alt="করোনা-ভাইরাসের-বর্তমান-পরিস্থিতি"></li>
+<li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/project-virus-9.webp" alt="আজকের-করোনা-আপডেট"></li>
+<li><img src="assets/images/icon/project-virus-10.webp" alt="করোনা-আপডেট-আজকের"></li>
 </ul>
 </div>
 </div>

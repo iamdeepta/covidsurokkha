@@ -57,6 +57,16 @@ require('admin/db.inc.php');
 
 		background-color: transparent;
 	}
+
+  @media screen and (max-width: 460px){
+    .test_center_section{
+      margin-bottom: 0px !important;
+    }
+
+    .test_center_section{
+      margin-top: 80px !important;
+    }
+  }
 </style>
 
 

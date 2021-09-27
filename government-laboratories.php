@@ -4,13 +4,13 @@ $govt_lab_query = mysqli_query($dbc, "SELECT * from tbl_approved_laboratories wh
 $private_lab_query = mysqli_query($dbc, "SELECT * from tbl_approved_laboratories where lab_type = 'private' and lab_status=0 order by lab_district asc");
 
 ?>
-<section class="data_table_area" id="hospital_section" style="background-color: #f5f5f9;margin-top: 80px;">
+<section class="data_table_area test_center_section" id="hospital_section" style="background-color: #f5f5f9;margin-top: 140px;margin-bottom: 150px">
 <div class="container">
 <div class="main_title text-center" data-aos="fade-down" data-aos-duration="1000">
 	<?php if(@$_GET['lang']=='en'){?>
-<h5 id="hospitals_nearby_text" style="font-size: 32px;">Approved Test Centres for International Passengers</h5>
+<h5 id="hospitals_nearby_text" style="font-size: 37px;">Approved Test Centres for International Passengers</h5>
 <?php }else{?>
-	<h5 class="notranslate" id="hospitals_nearby_text" style="font-size: 32px;">আন্তর্জাতিক যাত্রীদের জন্য অনুমোদিত টেস্ট প্রতিষ্ঠান</h5>
+	<h5 class="notranslate" id="hospitals_nearby_text" style="font-size: 37px;">আন্তর্জাতিক যাত্রীদের জন্য অনুমোদিত টেস্ট প্রতিষ্ঠান</h5>
 <?php }?>
 <?php if(@$_GET['lang']=='en'){?>
 <h2 style="font-size: 30px;margin-top: 30px">Government Test Centres</h2>

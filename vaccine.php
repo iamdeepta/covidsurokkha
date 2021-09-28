@@ -23,7 +23,7 @@ require('admin/db.inc.php');
 
   gtag('config', 'G-ESJ54C44Q4');
 </script>
-<?php if($_GET['lang']=='en'){?>
+<?php if(@$_GET['lang']=='en'){?>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="Here in Covid Surokkha, you'll get covid-19 vaccine registration, registration status, download of local and foreign vaccine cards and certificates.">
@@ -164,7 +164,7 @@ require('admin/db.inc.php');
 
 <div class="body_wrapper" id="body_wrapper">
 
-  <?php if($_GET['lang']=='en'){?>
+  <?php if(@$_GET['lang']=='en'){?>
   <span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">Covid-19 Vaccine Registration and Information in Bangladesh</h1></span>
 <?php }else{?>
   <span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">কোভিড-১৯ টিকা নিবন্ধন ও অন্যান্য তথ্য</h1></span>

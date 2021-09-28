@@ -27,7 +27,7 @@ require('admin/db.inc.php');
 
   gtag('config', 'G-ESJ54C44Q4');
 </script>
-<?php if($_GET['lang']=='en'){?>
+<?php if(@$_GET['lang']=='en'){?>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="Search nearby covid 19 test centers name or location for expatriates in covid surokkha. Contact us for more info.">
@@ -104,9 +104,9 @@ require('admin/db.inc.php');
 <div class="body_wrapper" id="body_wrapper">
 
   <?php if(@$_GET['lang']=='en'){?>
-	<span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">Covid 19 Test Centers for Expatriates</h1></span>
+	<span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">Covid 19 Test Centers for Expatriates</h1><a href="https://covidsurokkha.com/?lang=en">covid surokkha</a></span>
 <?php }else{?>
-  <span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">বিদেশগামী যাত্রীরা যেখানে করোনা পরীক্ষা করাবেন</h1></span>
+  <span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">বিদেশগামী যাত্রীরা যেখানে করোনা পরীক্ষা করাবেন</h1><a href="https://covidsurokkha.com/">কোভিড সুরক্ষা</a></span>
 <?php }?>
 
 

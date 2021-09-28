@@ -23,7 +23,7 @@ require('admin/db.inc.php');
 
   gtag('config', 'G-ESJ54C44Q4');
 </script>
-<?php if($_GET['lang']=='en'){?>
+<?php if(@$_GET['lang']=='en'){?>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="What is covid surokkha? What services do they provide? Know details about covid surokkha.">
@@ -63,7 +63,7 @@ require('admin/db.inc.php');
 <link rel="icon" href="assets/images/onlylogo.png" type="image/png" />
 <link rel="apple-touch-icon" href="assets/images/onlylogo.png"/>
 <link rel="canonical" href="https://covidsurokkha.com/about_us.php" />
-<title class="notranslate">কোভিড সুরক্ষা কি? এরা কোন কোন পরিষেবা প্রদান করে থাকে? /title>
+<title class="notranslate">কোভিড সুরক্ষা কি? এরা কোন কোন পরিষেবা প্রদান করে থাকে? </title>
 <?php }?>
 
 <?php include 'about_us_css.php';?>
@@ -72,7 +72,7 @@ require('admin/db.inc.php');
 
 <style type="text/css">
   
-  <?php if($_GET['lang']=='en'){?>
+  <?php if(@$_GET['lang']=='en'){?>
 
     #our_blogs_text::before{
 
@@ -160,8 +160,11 @@ require('admin/db.inc.php');
 
 <div class="body_wrapper" id="body_wrapper">
 
-
-	<!-- <span style="height:200px;margin-top:-200px;display:block;visibility:hidden"><img src="assets/images/covidshebalogoreview.jpg"></span> -->
+<?php if(@$_GET['lang']=='en'){?>
+	<span style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h2>What is Covid Surokkha?</h2><h2>What Services can you get from Covid Surokkha?</h2><a href="https://covidsurokkha.com/?lang=en">covid surokkha</a></span>
+<?php }else{?>
+  <span style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h2>কোভিড সুরক্ষা কি?</h2><h2>কোভিড সুরক্ষা থেকে আপনি কি কি পরিষেবা পেতে পারেন?</h2><a href="https://covidsurokkha.com/">কোভিড সুরক্ষা</a></span>
+<?php }?>
 
 <!-- <div class="preloader">
 <div class="three-bounce">
@@ -207,7 +210,7 @@ require('admin/db.inc.php');
 <div class="row">
 <div class="col-lg-6">
 <div class="home_ab_img" data-aos="fade-right" data-aos-duration="1000">
-<img id="who_we_are_img" class="wow fadeInUp" data-wow-delay="500ms" src="assets/images/about/who_we_are.png" style="height: 360px;width: 560px;object-fit: cover;border-radius: 15px;margin-top: -70px" alt="about us covidsurokkha" />
+<img id="who_we_are_img" class="wow fadeInUp" data-wow-delay="500ms" src="assets/images/about/who_we_are.png" style="height: 360px;width: 560px;object-fit: cover;border-radius: 15px;margin-top: -70px" alt="What is Covid Surokkha?" />
 </div>
 </div>
 <div class="col-lg-6">
@@ -232,7 +235,7 @@ The idea for covidsurokkha started when the Indian variant was first discovered 
 <div class="row">
 <div class="col-lg-6">
 <div class="home_ab_img" data-aos="fade-right" data-aos-duration="1000">
-<img id="who_we_are_img" class="wow fadeInUp" data-wow-delay="500ms" src="assets/images/about/who_we_are.png" style="height: 360px;width: 560px;object-fit: cover;border-radius: 15px;margin-top: -70px" alt="about us covidsurokkha bangla" />
+<img id="who_we_are_img" class="wow fadeInUp" data-wow-delay="500ms" src="assets/images/about/who_we_are.png" style="height: 360px;width: 560px;object-fit: cover;border-radius: 15px;margin-top: -70px" alt="কোভিড সুরক্ষা কি?" />
 </div>
 </div>
 <div class="col-lg-6">

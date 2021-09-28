@@ -23,7 +23,7 @@ require('admin/db.inc.php');
 
   gtag('config', 'G-ESJ54C44Q4');
 </script>
-<?php if($_GET['lang']=='en'){?>
+<?php if(@$_GET['lang']=='en'){?>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="Read information and tips about coronavirus from the covid surokkha blog section. Check out also for the latest blogs and get updated.">
@@ -187,7 +187,7 @@ require('admin/db.inc.php');
 
 <div class="body_wrapper" id="body_wrapper">
 
-  <?php if($_GET['lang']=='en'){?>
+  <?php if(@$_GET['lang']=='en'){?>
   <span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">Our Blog is Organized with Information and Tips about Coronavirus</h1></span>
 <?php }else{?>
   <span class="notranslate" style="height:200px;margin-top:-200px;display:block;visibility:hidden"><h1 style="font-weight: bold;">করোনা ভাইরাসের তথ্য ও পরামর্শ নিয়ে সাজানো হয়েছে আমাদের ব্লগ</h1></span>

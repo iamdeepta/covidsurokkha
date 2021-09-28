@@ -13,9 +13,9 @@ $private_lab_query = mysqli_query($dbc, "SELECT * from tbl_approved_laboratories
 	<h5 class="notranslate" id="hospitals_nearby_text" style="font-size: 37px;">আন্তর্জাতিক যাত্রীদের জন্য অনুমোদিত টেস্ট প্রতিষ্ঠান</h5>
 <?php }?>
 <?php if(@$_GET['lang']=='en'){?>
-<h2 style="font-size: 30px;margin-top: 30px">Government Test Centres</h2>
+<h2 style="font-size: 30px;margin-top: 30px">Government Covid 19 Test Centres</h2>
 <?php }else{?>
-	<h2 style="font-size: 30px;margin-top: 30px" class="notranslate">সরকারি টেস্ট প্রতিষ্ঠান</h2>
+	<h2 style="font-size: 30px;margin-top: 30px" class="notranslate">সরকারি করোনা পরীক্ষা কেন্দ্র</h2>
 
 <?php }?>
 </div>
@@ -73,9 +73,9 @@ $private_lab_query = mysqli_query($dbc, "SELECT * from tbl_approved_laboratories
 <div class="main_title text-center" data-aos="fade-down" data-aos-duration="1000">
 	
 <?php if(@$_GET['lang']=='en'){?>
-<h2 style="font-size: 30px;margin-top: 30px">Private Test Centres</h2>
+<h2 style="font-size: 30px;margin-top: 30px">Private Covid 19 Test Centres</h2>
 <?php }else{?>
-	<h2 style="font-size: 30px;margin-top: 30px" class="notranslate">বেসরকারি টেস্ট প্রতিষ্ঠান</h2>
+	<h2 style="font-size: 30px;margin-top: 30px" class="notranslate">বেসরকারি করোনা পরীক্ষা কেন্দ্র</h2>
 
 <?php }?>
 </div>
